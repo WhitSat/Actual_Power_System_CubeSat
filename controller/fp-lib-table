@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri H:/Research/Balloon/CommandModule/CM2-mainPCB/CM2_2/kicad_parts/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name FM24W256G)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/ul_FM24W256G/KiCAD/2020-03-09_16-09-33/footprints.pretty)(options "")(descr ""))
+  (lib (name SC16IS752)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/SC16IS752IPW/footprints.pretty)(options "")(descr ""))
+  (lib (name ADT7410TRZ)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/ADT7410TRZ/footprints.pretty)(options "")(descr ""))
+  (lib (name MAX732MJA883B)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/MAX732MJA883B)(options "")(descr ""))
+  (lib (name PCV1E271MCL2GS)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/PCV1E271MCL2GS)(options "")(descr ""))
+)
