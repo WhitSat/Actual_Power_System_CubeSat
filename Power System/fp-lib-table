@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name PCV1D101MCL2GS)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/PCV1D101MCL2GS")(options "")(descr ""))
+  (lib (name LittleFuse_0157004DRT)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/LittleFuse_0157004DRT")(options "")(descr ""))
+  (lib (name DS2781e)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/DS2781e")(options "")(descr ""))
+  (lib (name TPS22810DBVR)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/TPS22810DBVR")(options "")(descr ""))
+  (lib (name R-533)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/R-533.3PA")(options "")(descr ""))
+  (lib (name R-535)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/R-535.0PA")(options "")(descr ""))
+)

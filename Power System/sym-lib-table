@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name TPS22810DBVR)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/TPS22810DBVR/TPS22810DBVR.lib")(options "")(descr ""))
+  (lib (name R-535.0PA)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/R-535.0PA/R-535.0PA.lib")(options "")(descr ""))
+  (lib (name PCV1D101MCL2GS)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/PCV1D101MCL2GS/PCV1D101MCL2GS.lib")(options "")(descr ""))
+  (lib (name R-533.3PA)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/R-533.3PA/R-533.3PA.lib")(options "")(descr ""))
+  (lib (name ds2781e&plus_)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/DS2781e/ds2781e&plus_.lib")(options "")(descr ""))
+  (lib (name LittleFuse_0157004.DRT)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/LittleFuse_0157004DRT/LittleFuse_0157004.DRT.lib")(options "")(descr ""))
+)

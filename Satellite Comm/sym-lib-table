@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SAM-M8Q)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/SAMM8Q/SAM-M8Q.lib")(options "")(descr ""))
+  (lib (name Molex_533981071)(type Legacy)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/Molex_533981071/Molex_533981071.lib")(options "")(descr ""))
+)

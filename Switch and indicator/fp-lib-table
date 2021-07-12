@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name TMP36GRTZ-SOT23)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/TMP36GRTZ-SOT23")(options "")(descr ""))
+  (lib (name JS102011SCQN)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/JS102011SCQN")(options "")(descr ""))
+  (lib (name WurthElektronik_61201020621)(type KiCad)(uri "X:/Work/High Altitude Research/CM2-mainPCB/kicad_parts/WurthElektronik_61201020621")(options "")(descr ""))
+)

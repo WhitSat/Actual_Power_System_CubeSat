@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# MAX732MJA883B
+#
+DEF MAX732MJA883B U 0 40 Y Y 1 L N
+F0 "U" 1014 359 50 H V L BNN
+F1 "MAX732MJA883B" 989 259 50 H V L BNN
+F2 "21-0045A_8" 0 0 50 H I L BNN
+F3 "MAXIM" 0 0 50 H I L BNN
+F4 "max732mja883b" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 6 300 200 300 -500 N
+P 2 0 0 6 300 -500 2100 -500 N
+P 2 0 0 6 2100 -500 2100 200 N
+P 2 0 0 6 2100 200 300 200 N
+X *SHDN 1 0 0 300 R 40 40 0 0 O 
+X VREF 2 0 -100 300 R 40 40 0 0 W 
+X SS 3 0 -200 300 R 40 40 0 0 P 
+X CC 4 0 -300 300 R 40 40 0 0 I 
+X GND 5 2400 -300 300 L 40 40 0 0 W 
+X LX 6 2400 -200 300 L 40 40 0 0 P 
+X VOUT 7 2400 -100 300 L 40 40 0 0 O 
+X V+ 8 2400 0 300 L 40 40 0 0 W 
+ENDDRAW
+ENDDEF
+#
+# End Library
