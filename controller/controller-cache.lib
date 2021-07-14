@@ -71,130 +71,6 @@ X VDD 8 0 0 300 R 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x02
-#
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_C
-#
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Crystal
-#
-DEF Device_Crystal Y 0 40 N N 1 F N
-F0 "Y" 0 150 50 H V C CNN
-F1 "Device_Crystal" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -75 0 N
-P 2 0 1 20 -75 -50 -75 50 N
-P 2 0 1 20 75 -50 75 50 N
-P 2 0 1 0 100 0 75 0 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 150 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Zener_ALT
-#
-DEF Device_D_Zener_ALT D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Zener_ALT" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 3 0 1 10 -50 -50 -50 50 -30 50 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 F
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_L
-#
-DEF Device_L L 0 40 N N 1 F N
-F0 "L" -50 0 50 V V C CNN
-F1 "Device_L" 75 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Choke_*
- *Coil*
- Inductor_*
- L_*
-$ENDFPLIST
-DRAW
-A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
-A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
-A 0 25 25 -899 899 0 1 0 N 0 0 0 50
-A 0 75 25 -899 899 0 1 0 N 0 50 0 100
-X 1 1 0 150 50 D 50 50 1 1 P
-X 2 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R
-#
-DEF Device_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # MAX732MJA883B_MAX732MJA883B
 #
 DEF MAX732MJA883B_MAX732MJA883B U 0 40 Y Y 1 L N
@@ -241,59 +117,73 @@ X 2 2 300 0 100 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# SC16IS752IPW_SC16IS752IPW
+# WhitworthStandard_XBee
 #
-DEF SC16IS752IPW_SC16IS752IPW U 0 10 Y Y 1 L N
-F0 "U" 1700 400 60 H V C CNN
-F1 "SC16IS752IPW_SC16IS752IPW" 1700 300 60 H V C CNN
-F2 "SOT361-1" 1700 240 60 H I C CNN
-F3 "" 0 0 60 H V C CNN
-$FPLIST
- SOT361-1
- SOT361-1-M
- SOT361-1-L
-$ENDFPLIST
+DEF WhitworthStandard_XBee XB 0 40 Y Y 1 F N
+F0 "XB" 0 -900 60 H V C CNN
+F1 "WhitworthStandard_XBee" 0 300 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
 DRAW
-P 2 1 1 5 300 -1500 3100 -1500 N
-P 2 1 1 5 300 200 300 -1500 N
-P 2 1 1 5 3100 -1500 3100 200 N
-P 2 1 1 5 3100 200 300 200 N
-X *RTSA 1 0 0 300 R 59 59 1 1 U
-X A0/*CS 10 0 -900 300 R 59 59 1 1 U
-X A1/SI 11 0 -1000 300 R 59 59 1 1 U
-X NC/SO 12 0 -1100 300 R 59 59 1 1 U
-X SCL/SCLK 13 0 -1200 300 R 59 59 1 1 U
-X SDA/VSS 14 0 -1300 300 R 59 59 1 1 U
-X *IRQ 15 3400 -1300 300 L 59 59 1 1 U
-X *CTSB 16 3400 -1200 300 L 59 59 1 1 U
-X *RTSB 17 3400 -1100 300 L 59 59 1 1 U
-X GPIO0/*DSRB 18 3400 -1000 300 L 59 59 1 1 U
-X GPIO1/*DTRB 19 3400 -900 300 L 59 59 1 1 U
-X *CTSA 2 0 -100 300 R 59 59 1 1 U
-X GPIO2/*CDB 20 3400 -800 300 L 59 59 1 1 U
-X GPIO3/*RIB 21 3400 -700 300 L 59 59 1 1 U
-X VSS 22 3400 -600 300 L 59 59 1 1 U
-X TXB 23 3400 -500 300 L 59 59 1 1 U
-X RXB 24 3400 -400 300 L 59 59 1 1 U
-X GPIO4/*DSRA 25 3400 -300 300 L 59 59 1 1 U
-X GPIO5/*DTRA 26 3400 -200 300 L 59 59 1 1 U
-X GPIO6/*CDA 27 3400 -100 300 L 59 59 1 1 U
-X GPIO7/*RIA 28 3400 0 300 L 59 59 1 1 U
-X TXA 3 0 -200 300 R 59 59 1 1 U
-X RXA 4 0 -300 300 R 59 59 1 1 U
-X *RESET 5 0 -400 300 R 59 59 1 1 U
-X XTAL1 6 0 -500 300 R 59 59 1 1 U
-X XTAL2 7 0 -600 300 R 59 59 1 1 U
-X VDD 8 0 -700 300 R 59 59 1 1 U
-X I2C/*SPI 9 0 -800 300 R 59 59 1 1 U
+S -850 250 850 -850 0 1 0 N
+X VCC 1 -1050 150 200 R 50 50 1 1 W
+X GND 10 -1050 -750 200 R 50 50 1 1 W
+X AD4/CIO4 11 1050 -750 200 L 50 50 1 1 B
+X !CTS/DIO7 12 1050 -650 200 L 50 50 1 1 B
+X ON/!SLEEP 13 1050 -550 200 L 50 50 1 1 O
+X VREF 14 1050 -450 200 L 50 50 1 1 I
+X Associate/AD5/DIO5 15 1050 -350 200 L 50 50 1 1 B
+X !RTS/AD6/DIO6 16 1050 -250 200 L 50 50 1 1 B
+X AD3/DIO3 17 1050 -150 200 L 50 50 1 1 B
+X AD2/DIO2 18 1050 -50 200 L 50 50 1 1 B
+X AD1/DIO1 19 1050 50 200 L 50 50 1 1 B
+X DOUT 2 -1050 50 200 R 50 50 1 1 O
+X AD0/DIO0 20 1050 150 200 L 50 50 1 1 B
+X DIN/!CONFIG 3 -1050 -50 200 R 50 50 1 1 I
+X ~ 4 -1050 -150 200 R 50 50 1 1 N
+X !RESET 5 -1050 -250 200 R 50 50 1 1 I
+X PWM0/RSSI 6 -1050 -350 200 R 50 50 1 1 O
+X PWM1 7 -1050 -450 200 R 50 50 1 1 O
+X ~ 8 -1050 -550 200 R 50 50 1 1 N
+X !DTR/SLEEP_RQ/DI8 9 -1050 -650 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# WhitworthStandard_+7.4V
+# controller-rescue_+3.3V-power
 #
-DEF WhitworthStandard_+7.4V #PWR 0 0 Y Y 1 F P
+DEF controller-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "WhitworthStandard_+7.4V" 0 140 50 H V C CNN
+F1 "controller-rescue_+3.3V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_+5V-power
+#
+DEF controller-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "controller-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_+7.4V-WhitworthStandard
+#
+DEF controller-rescue_+7.4V-WhitworthStandard #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "controller-rescue_+7.4V-WhitworthStandard" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -304,11 +194,134 @@ X +7.4V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# WhitworthStandard_LPC1768
+# controller-rescue_+BATT-power
 #
-DEF WhitworthStandard_LPC1768 MBED 0 40 Y Y 1 F N
+DEF controller-rescue_+BATT-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "controller-rescue_+BATT-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +BATT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_C-Device
+#
+DEF controller-rescue_C-Device C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "controller-rescue_C-Device" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_D_Zener_ALT-Device
+#
+DEF controller-rescue_D_Zener_ALT-Device D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "controller-rescue_D_Zener_ALT-Device" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 10 -50 -50 -50 50 -30 50 N
+P 4 0 1 10 50 -50 50 50 -50 0 50 -50 F
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_GND-power
+#
+DEF controller-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "controller-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_GNDPWR-power
+#
+DEF controller-rescue_GNDPWR-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -200 50 H I C CNN
+F1 "controller-rescue_GNDPWR-power" 0 -130 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+P 2 0 1 0 0 -50 0 0 N
+P 3 0 1 8 -40 -50 -50 -80 -50 -80 N
+P 3 0 1 8 -20 -50 -30 -80 -30 -80 N
+P 3 0 1 8 0 -50 -10 -80 -10 -80 N
+P 3 0 1 8 20 -50 10 -80 10 -80 N
+P 3 0 1 8 40 -50 -40 -50 -40 -50 N
+P 4 0 1 8 40 -50 30 -80 30 -80 30 -80 N
+X GNDPWR 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_GNDS-power
+#
+DEF controller-rescue_GNDS-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "controller-rescue_GNDS-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GNDS 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_L-Device
+#
+DEF controller-rescue_L-Device L 0 40 N N 1 F N
+F0 "L" -50 0 50 V V C CNN
+F1 "controller-rescue_L-Device" 75 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_LPC1768-WhitworthStandard
+#
+DEF controller-rescue_LPC1768-WhitworthStandard MBED 0 40 Y Y 1 F N
 F0 "MBED" 0 -1100 60 H V C CNN
-F1 "WhitworthStandard_LPC1768" 0 950 60 H V C CNN
+F1 "controller-rescue_LPC1768-WhitworthStandard" 0 950 60 H V C CNN
 F2 "" 50 0 60 H I C CNN
 F3 "" 50 0 60 H I C CNN
 DRAW
@@ -380,43 +393,11 @@ X tx/sda 9 -750 150 200 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# WhitworthStandard_RN41
+# controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard-controller-rescue
 #
-DEF WhitworthStandard_RN41 BT 0 40 Y Y 1 F N
-F0 "BT" 0 -900 60 H V C CNN
-F1 "WhitworthStandard_RN41" 0 300 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S -850 250 850 -850 0 1 0 N
-X VDD 1 -1050 150 200 R 50 50 1 1 W
-X GND 10 -1050 -750 200 R 50 50 1 1 W
-X GPIO8 11 1050 -750 200 L 50 50 1 1 B
-X RTS 12 1050 -650 200 L 50 50 1 1 O
-X GPIO2/AIN2 13 1050 -550 200 L 50 50 1 1 O
-X ~ 14 1050 -450 200 L 50 50 1 1 N
-X GPIO5/AIN5 15 1050 -350 200 L 50 50 1 1 B
-X CTS 16 1050 -250 200 L 50 50 1 1 I
-X GPIO3/AIN3 17 1050 -150 200 L 50 50 1 1 B
-X GPIO7/AIN7 18 1050 -50 200 L 50 50 1 1 B
-X AIO0 19 1050 50 200 L 50 50 1 1 B
-X TXD 2 -1050 50 200 R 50 50 1 1 O
-X AIO1 20 1050 150 200 L 50 50 1 1 B
-X RXD 3 -1050 -50 200 R 50 50 1 1 I
-X GPIO7/AIN7 4 -1050 -150 200 R 50 50 1 1 B
-X !RESET 5 -1050 -250 200 R 50 50 1 1 I
-X GPIO6/AIN6 6 -1050 -350 200 R 50 50 1 1 B
-X GPIO9/AIN9 7 -1050 -450 200 R 50 50 1 1 B
-X GPIO4/AIN4 8 -1050 -550 200 R 50 50 1 1 B
-X GPIO11 9 -1050 -650 200 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard
-#
-DEF controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard J 0 40 Y N 1 F N
+DEF controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard-controller-rescue J 0 40 Y N 1 F N
 F0 "J" 50 1000 50 H V C CNN
-F1 "controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard" 50 -1100 50 H V C CNN
+F1 "controller-rescue_PC104_40Pin_2.54mm-WhitworthStandard-controller-rescue" 50 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -507,6 +488,59 @@ X Pin_9 9 -200 100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# controller-rescue_PWR_FLAG-power
+#
+DEF controller-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "controller-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_R-Device
+#
+DEF controller-rescue_R-Device R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "controller-rescue_R-Device" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# controller-rescue_Screw_Terminal_01x02-Connector
+#
+DEF controller-rescue_Screw_Terminal_01x02-Connector J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "controller-rescue_Screw_Terminal_01x02-Connector" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # power_+3.3V
 #
 DEF power_+3.3V #PWR 0 0 Y Y 1 F P
@@ -523,36 +557,6 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+BATT
-#
-DEF power_+BATT #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+BATT" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +BATT 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -563,51 +567,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDPWR
-#
-DEF power_GNDPWR #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -200 50 H I C CNN
-F1 "power_GNDPWR" 0 -130 50 H V C CNN
-F2 "" 0 -50 50 H I C CNN
-F3 "" 0 -50 50 H I C CNN
-DRAW
-P 2 0 1 0 0 -50 0 0 N
-P 3 0 1 8 -40 -50 -50 -80 -50 -80 N
-P 3 0 1 8 -20 -50 -30 -80 -30 -80 N
-P 3 0 1 8 0 -50 -10 -80 -10 -80 N
-P 3 0 1 8 20 -50 10 -80 10 -80 N
-P 3 0 1 8 40 -50 -40 -50 -40 -50 N
-P 4 0 1 8 40 -50 30 -80 30 -80 30 -80 N
-X GNDPWR 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GNDS
-#
-DEF power_GNDS #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GNDS" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GNDS 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_PWR_FLAG
-#
-DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+BATT #PWR0101
+L controller-rescue:+BATT-power #PWR0101
 U 1 1 5DB9296C
 P 9800 900
 F 0 "#PWR0101" H 9800 750 50  0001 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 9800 900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0101
+L controller-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5DB92D9A
 P 9800 800
 F 0 "#FLG0101" H 9800 875 50  0001 C CNN
@@ -39,7 +38,7 @@ $EndComp
 Wire Wire Line
 	9800 800  9800 900 
 $Comp
-L power:PWR_FLAG #FLG0102
+L controller-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5DB94156
 P 10300 800
 F 0 "#FLG0102" H 10300 875 50  0001 C CNN
@@ -50,7 +49,7 @@ F 3 "~" H 10300 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WhitworthStandard:+7.4V #PWR0102
+L controller-rescue:+7.4V-WhitworthStandard #PWR0102
 U 1 1 5DB94A82
 P 10300 900
 F 0 "#PWR0102" H 10300 750 50  0001 C CNN
@@ -61,7 +60,7 @@ F 3 "" H 10300 900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0103
+L controller-rescue:PWR_FLAG-power #FLG0103
 U 1 1 5DB951CB
 P 9800 1650
 F 0 "#FLG0103" H 9800 1725 50  0001 C CNN
@@ -72,7 +71,7 @@ F 3 "~" H 9800 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0103
+L controller-rescue:+3.3V-power #PWR0103
 U 1 1 5DB958B5
 P 10300 1750
 F 0 "#PWR0103" H 10300 1600 50  0001 C CNN
@@ -83,7 +82,7 @@ F 3 "" H 10300 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0104
+L controller-rescue:PWR_FLAG-power #FLG0104
 U 1 1 5DB95EE2
 P 10300 1650
 F 0 "#FLG0104" H 10300 1725 50  0001 C CNN
@@ -94,7 +93,7 @@ F 3 "~" H 10300 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
+L controller-rescue:+5V-power #PWR0104
 U 1 1 5DB96D50
 P 9800 1750
 F 0 "#PWR0104" H 9800 1600 50  0001 C CNN
@@ -105,7 +104,7 @@ F 3 "" H 9800 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0105
+L controller-rescue:PWR_FLAG-power #FLG0105
 U 1 1 5DB978AF
 P 9300 2500
 F 0 "#FLG0105" H 9300 2575 50  0001 C CNN
@@ -116,7 +115,7 @@ F 3 "~" H 9300 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0105
+L controller-rescue:GND-power #PWR0105
 U 1 1 5DB97F49
 P 9300 2600
 F 0 "#PWR0105" H 9300 2350 50  0001 C CNN
@@ -170,20 +169,8 @@ Text Label 8150 1500 0    50   ~ 0
 PWM
 Text Label 7650 2100 2    50   ~ 0
 DIO1
-Text Label 8150 2500 0    50   ~ 0
-RADIO_WAKE
-Text Label 8150 1100 0    50   ~ 0
-RADIO_RX
-Text Label 8150 1000 0    50   ~ 0
-RADIO_TX
-Text Label 7650 1500 2    50   ~ 0
-POD_WAKE
-Text Label 7650 1700 2    50   ~ 0
-POD_RX
-Text Label 7650 1600 2    50   ~ 0
-POD_TX
 $Comp
-L power:+5V #PWR0106
+L controller-rescue:+5V-power #PWR0106
 U 1 1 5DBA9AD1
 P 8150 900
 F 0 "#PWR0106" H 8150 750 50  0001 C CNN
@@ -194,7 +181,7 @@ F 3 "" H 8150 900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0107
+L controller-rescue:GND-power #PWR0107
 U 1 1 5DBAA285
 P 7300 900
 F 0 "#PWR0107" H 7300 650 50  0001 C CNN
@@ -205,7 +192,7 @@ F 3 "" H 7300 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR0108
+L controller-rescue:GNDS-power #PWR0108
 U 1 1 5DBABCBA
 P 7050 2000
 F 0 "#PWR0108" H 7050 1750 50  0001 C CNN
@@ -216,7 +203,7 @@ F 3 "" H 7050 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L controller-rescue:GND-power #PWR0110
 U 1 1 5DBB128C
 P 7650 2800
 F 0 "#PWR0110" H 7650 2550 50  0001 C CNN
@@ -227,7 +214,7 @@ F 3 "" H 7650 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WhitworthStandard:PC104_40Pin_2.54mm J1
+L controller-rescue:PC104_40Pin_2.54mm-WhitworthStandard-controller-rescue J1
 U 1 1 5DB909C2
 P 7850 1800
 F 0 "J1" H 7900 2917 50  0000 C CNN
@@ -238,7 +225,7 @@ F 3 "~" H 7850 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WhitworthStandard:+7.4V #PWR0112
+L controller-rescue:+7.4V-WhitworthStandard #PWR0112
 U 1 1 5E1E31F7
 P 7650 2600
 F 0 "#PWR0112" H 7650 2450 50  0001 C CNN
@@ -255,7 +242,7 @@ EXT_TEMP
 Text Label 7650 1100 2    50   ~ 0
 A3
 $Comp
-L WhitworthStandard:+7.4V #PWR0114
+L controller-rescue:+7.4V-WhitworthStandard #PWR0114
 U 1 1 5E1EC1FF
 P 8150 2600
 F 0 "#PWR0114" H 8150 2450 50  0001 C CNN
@@ -266,7 +253,7 @@ F 3 "" H 8150 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDPWR #PWR0116
+L controller-rescue:GNDPWR-power #PWR0116
 U 1 1 5E1F1571
 P 9800 2650
 F 0 "#PWR0116" H 9800 2450 50  0001 C CNN
@@ -277,7 +264,7 @@ F 3 "" H 9800 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0106
+L controller-rescue:PWR_FLAG-power #FLG0106
 U 1 1 5E1F21ED
 P 9800 2500
 F 0 "#FLG0106" H 9800 2575 50  0001 C CNN
@@ -288,7 +275,7 @@ F 3 "~" H 9800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0107
+L controller-rescue:PWR_FLAG-power #FLG0107
 U 1 1 5E1F350A
 P 10300 2500
 F 0 "#FLG0107" H 10300 2575 50  0001 C CNN
@@ -299,7 +286,7 @@ F 3 "~" H 10300 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDS #PWR0117
+L controller-rescue:GNDS-power #PWR0117
 U 1 1 5E1F3E4B
 P 10300 2650
 F 0 "#PWR0117" H 10300 2400 50  0001 C CNN
@@ -314,7 +301,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 2500 10300 2650
 $Comp
-L WhitworthStandard:LPC1768 MBED1
+L controller-rescue:LPC1768-WhitworthStandard MBED1
 U 1 1 5E1E1462
 P 5700 4250
 F 0 "MBED1" H 5700 5487 60  0000 C CNN
@@ -325,7 +312,7 @@ F 3 "" H 5750 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0118
+L controller-rescue:GND-power #PWR0118
 U 1 1 5E1E6F45
 P 4500 3300
 F 0 "#PWR0118" H 4500 3050 50  0001 C CNN
@@ -349,14 +336,12 @@ Text Label 4950 4100 2    50   ~ 0
 I2C_SDA
 Text Label 4950 4200 2    50   ~ 0
 I2C_SCL
-Text Label 6450 4900 0    50   ~ 0
-SERIAL_ALERT
 Text Label 4950 4700 2    50   ~ 0
-POD_WAKE
+Local_WAKE
 Text Label 4950 4600 2    50   ~ 0
-POD_TX
+Local_TX
 Text Label 4950 4500 2    50   ~ 0
-POD_RX
+Local_RX
 Text Label 4950 4400 2    50   ~ 0
 RADIO_WAKE
 Text Label 4950 4800 2    50   ~ 0
@@ -397,10 +382,8 @@ NoConn ~ 6450 3700
 NoConn ~ 6450 3800
 NoConn ~ 6450 3900
 NoConn ~ 6450 4000
-NoConn ~ 6450 4100
-NoConn ~ 6450 4200
 $Comp
-L power:GND #PWR0120
+L controller-rescue:GND-power #PWR0120
 U 1 1 5E2103DF
 P 10300 4000
 F 0 "#PWR0120" H 10300 3750 50  0001 C CNN
@@ -415,7 +398,7 @@ I2C_SCL
 Text Label 7950 4500 2    50   ~ 0
 I2C_SDA
 $Comp
-L power:+3.3V #PWR0121
+L controller-rescue:+3.3V-power #PWR0121
 U 1 1 5E211018
 P 7950 3900
 F 0 "#PWR0121" H 7950 3750 50  0001 C CNN
@@ -455,7 +438,7 @@ NoConn ~ 1200 3600
 NoConn ~ 1200 3700
 NoConn ~ 1200 4000
 $Comp
-L power:GND #PWR0122
+L controller-rescue:GND-power #PWR0122
 U 1 1 5E68D194
 P 650 3800
 F 0 "#PWR0122" H 650 3550 50  0001 C CNN
@@ -470,7 +453,7 @@ Wire Wire Line
 Text Label 900  3700 2    50   ~ 0
 I2C_SCL
 $Comp
-L power:+3.3V #PWR0123
+L controller-rescue:+3.3V-power #PWR0123
 U 1 1 5E6908E7
 P 1000 3300
 F 0 "#PWR0123" H 1000 3150 50  0001 C CNN
@@ -481,7 +464,7 @@ F 3 "" H 1000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L controller-rescue:R-Device R1
 U 1 1 5E691908
 P 1000 3450
 F 0 "R1" V 900 3400 50  0000 L CNN
@@ -501,7 +484,7 @@ Wire Wire Line
 	1000 3700 1000 3600
 Connection ~ 1000 3700
 $Comp
-L power:+3.3V #PWR0124
+L controller-rescue:+3.3V-power #PWR0124
 U 1 1 5E698065
 P 3400 3700
 F 0 "#PWR0124" H 3400 3550 50  0001 C CNN
@@ -512,7 +495,7 @@ F 3 "" H 3400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
+L controller-rescue:R-Device R2
 U 1 1 5E698CA6
 P 3550 3850
 F 0 "R2" V 3650 3800 50  0000 L CNN
@@ -546,222 +529,8 @@ Text Notes 3250 4350 0    50   ~ 0
 Non-Volatile Memory
 Text Notes 3100 3100 0    50   ~ 0
 I2C address set to 0xA0
-$Comp
-L SC16IS752IPW:SC16IS752IPW U2
-U 1 1 5E6B3003
-P 2550 1100
-F 0 "U2" H 4250 1487 60  0000 C CNN
-F 1 "SC16IS752IPW" H 4250 1381 60  0000 C CNN
-F 2 "SC16IS752:SC16IS752IPW" H 4250 1340 60  0001 C CNN
-F 3 "" H 2550 1100 60  0000 C CNN
-	1    2550 1100
-	1    0    0    -1  
-$EndComp
-Text Label 2550 2400 2    50   ~ 0
-I2C_SDA
-Text Label 2550 2300 2    50   ~ 0
-I2C_SCL
-Text Label 2550 1300 2    50   ~ 0
-BT_TX
-Text Label 2550 1400 2    50   ~ 0
-BT_RX
-$Comp
-L power:+3.3V #PWR0125
-U 1 1 5E6B674C
-P 2250 2000
-F 0 "#PWR0125" H 2250 1850 50  0001 C CNN
-F 1 "+3.3V" H 2265 2173 50  0000 C CNN
-F 2 "" H 2250 2000 50  0001 C CNN
-F 3 "" H 2250 2000 50  0001 C CNN
-	1    2250 2000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2550 1100
-NoConn ~ 2550 1200
-NoConn ~ 5950 2300
-NoConn ~ 5950 2200
-NoConn ~ 5950 2100
-NoConn ~ 5950 2000
-NoConn ~ 5950 1900
-NoConn ~ 5950 1800
-NoConn ~ 5950 1400
-NoConn ~ 5950 1300
-NoConn ~ 5950 1200
-NoConn ~ 5950 1100
-Text Label 5950 1600 0    50   ~ 0
-RADIO_TX
-Text Label 5950 1500 0    50   ~ 0
-RADIO_RX
-$Comp
-L power:+3.3V #PWR0126
-U 1 1 5E66A5CE
-P 6150 2100
-F 0 "#PWR0126" H 6150 1950 50  0001 C CNN
-F 1 "+3.3V" H 6165 2273 50  0000 C CNN
-F 2 "" H 6150 2100 50  0001 C CNN
-F 3 "" H 6150 2100 50  0001 C CNN
-	1    6150 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5E66AEB4
-P 6150 2250
-F 0 "R3" H 6200 2250 50  0000 L CNN
-F 1 "1k" V 6150 2200 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 2250 50  0001 C CNN
-F 3 "~" H 6150 2250 50  0001 C CNN
-	1    6150 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 2400 6000 2400
-$Comp
-L power:GND #PWR0127
-U 1 1 5E66F1B5
-P 6450 1700
-F 0 "#PWR0127" H 6450 1450 50  0001 C CNN
-F 1 "GND" H 6455 1527 50  0000 C CNN
-F 2 "" H 6450 1700 50  0001 C CNN
-F 3 "" H 6450 1700 50  0001 C CNN
-	1    6450 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 1700 6450 1700
-Wire Wire Line
-	2550 2000 2450 2000
-Wire Wire Line
-	2550 1900 2450 1900
-Wire Wire Line
-	2450 1900 2450 2000
-Wire Wire Line
-	2550 1800 2450 1800
-Wire Wire Line
-	2450 1800 2450 1900
-Connection ~ 2450 1900
-Wire Wire Line
-	2450 2000 2250 2000
-Connection ~ 2450 2000
-Wire Wire Line
-	2550 2100 2100 2100
-$Comp
-L power:GND #PWR0128
-U 1 1 5E676C6F
-P 2100 2100
-F 0 "#PWR0128" H 2100 1850 50  0001 C CNN
-F 1 "GND" H 2105 1927 50  0000 C CNN
-F 2 "" H 2100 2100 50  0001 C CNN
-F 3 "" H 2100 2100 50  0001 C CNN
-	1    2100 2100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2550 2200
-$Comp
-L power:+3.3V #PWR0129
-U 1 1 5E677897
-P 2100 1500
-F 0 "#PWR0129" H 2100 1350 50  0001 C CNN
-F 1 "+3.3V" H 2115 1673 50  0000 C CNN
-F 2 "" H 2100 1500 50  0001 C CNN
-F 3 "" H 2100 1500 50  0001 C CNN
-	1    2100 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 1500 2100 1500
 Wire Wire Line
 	4950 3300 4500 3300
-$Comp
-L Device:C C1
-U 1 1 5E67E9ED
-P 750 2050
-F 0 "C1" H 865 2096 50  0000 L CNN
-F 1 "22 pF" H 865 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 788 1900 50  0001 C CNN
-F 3 "~" H 750 2050 50  0001 C CNN
-	1    750  2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5E67FCF7
-P 1300 2050
-F 0 "C2" H 1415 2096 50  0000 L CNN
-F 1 "33 pF" H 1415 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 1338 1900 50  0001 C CNN
-F 3 "~" H 1300 2050 50  0001 C CNN
-	1    1300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0130
-U 1 1 5E68070B
-P 750 2200
-F 0 "#PWR0130" H 750 1950 50  0001 C CNN
-F 1 "GND" H 755 2027 50  0000 C CNN
-F 2 "" H 750 2200 50  0001 C CNN
-F 3 "" H 750 2200 50  0001 C CNN
-	1    750  2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0131
-U 1 1 5E680E39
-P 1300 2200
-F 0 "#PWR0131" H 1300 1950 50  0001 C CNN
-F 1 "GND" H 1305 2027 50  0000 C CNN
-F 2 "" H 1300 2200 50  0001 C CNN
-F 3 "" H 1300 2200 50  0001 C CNN
-	1    1300 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Crystal X1
-U 1 1 5E68286A
-P 1300 1750
-F 0 "X1" V 1254 1881 50  0000 L CNN
-F 1 "1.8432 MHz" V 1345 1881 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 1300 1750 50  0001 C CNN
-F 3 "~" H 1300 1750 50  0001 C CNN
-	1    1300 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2550 1700 1950 1700
-Wire Wire Line
-	1950 1700 1950 1900
-Wire Wire Line
-	1300 1600 2550 1600
-Wire Wire Line
-	1300 1900 1950 1900
-Connection ~ 1300 1900
-Wire Wire Line
-	1300 1600 750  1600
-Wire Wire Line
-	750  1600 750  1900
-Connection ~ 1300 1600
-Wire Notes Line
-	550  550  6600 550 
-Wire Notes Line
-	6600 550  6600 2850
-Wire Notes Line
-	6600 2850 550  2850
-Wire Notes Line
-	550  2850 550  550 
-Text Notes 5900 2850 0    50   ~ 0
-Serial Multiplexer
-Text Notes 650  800  0    50   ~ 0
-I2C address set to 0x98\nA0 = VDD, V1 = GND
-Text Label 6050 2600 0    50   ~ 0
-SERIAL_ALERT
-Wire Wire Line
-	6000 2400 6000 2600
-Wire Wire Line
-	6000 2600 6050 2600
-Connection ~ 6000 2400
-Wire Wire Line
-	6000 2400 6150 2400
 $Comp
 L ADT7410TRZ:ADT7410TRZ U3
 U 1 1 5E7101E3
@@ -783,7 +552,7 @@ Wire Wire Line
 	7950 4100 7500 4100
 Connection ~ 7950 4100
 $Comp
-L power:GND #PWR0132
+L controller-rescue:GND-power #PWR0132
 U 1 1 5E716AE3
 P 7500 4100
 F 0 "#PWR0132" H 7500 3850 50  0001 C CNN
@@ -802,7 +571,7 @@ Wire Notes Line
 Wire Notes Line
 	7350 3250 7350 5000
 $Comp
-L WhitworthStandard:+7.4V #PWR0119
+L controller-rescue:+7.4V-WhitworthStandard #PWR0119
 U 1 1 5E716768
 P 4950 3400
 F 0 "#PWR0119" H 4950 3250 50  0001 C CNN
@@ -813,7 +582,7 @@ F 3 "" H 4950 3400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0109
+L controller-rescue:+3.3V-power #PWR0109
 U 1 1 5E718EAD
 P 8150 2800
 F 0 "#PWR0109" H 8150 2650 50  0001 C CNN
@@ -827,66 +596,8 @@ Wire Wire Line
 	7650 2000 7050 2000
 Wire Wire Line
 	7650 900  7300 900 
-$Comp
-L WhitworthStandard:RN41 BT1
-U 1 1 5E7427EC
-P 9250 5650
-F 0 "BT1" H 9250 6087 60  0000 C CNN
-F 1 "RN41" H 9250 5981 60  0000 C CNN
-F 2 "WhitworthStandard:xbee-standard" H 9250 5650 60  0001 C CNN
-F 3 "" H 9250 5650 60  0001 C CNN
-	1    9250 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0133
-U 1 1 5E743FCE
-P 8200 5500
-F 0 "#PWR0133" H 8200 5350 50  0001 C CNN
-F 1 "+3.3V" H 8215 5673 50  0000 C CNN
-F 2 "" H 8200 5500 50  0001 C CNN
-F 3 "" H 8200 5500 50  0001 C CNN
-	1    8200 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0134
-U 1 1 5E74458B
-P 8200 6400
-F 0 "#PWR0134" H 8200 6150 50  0001 C CNN
-F 1 "GND" H 8205 6227 50  0000 C CNN
-F 2 "" H 8200 6400 50  0001 C CNN
-F 3 "" H 8200 6400 50  0001 C CNN
-	1    8200 6400
-	1    0    0    -1  
-$EndComp
-Text Label 8200 5600 2    50   ~ 0
-BT_RX
-Text Label 8200 5700 2    50   ~ 0
-BT_TX
-NoConn ~ 8200 5800
-NoConn ~ 8200 5900
-NoConn ~ 8200 6000
-NoConn ~ 8200 6100
-NoConn ~ 8200 6200
-NoConn ~ 8200 6300
-NoConn ~ 10300 5500
-NoConn ~ 10300 5600
-NoConn ~ 10300 5700
-NoConn ~ 10300 5800
-NoConn ~ 10300 5900
-NoConn ~ 10300 6000
-NoConn ~ 10300 6200
-NoConn ~ 10300 6300
-NoConn ~ 10300 6400
-Wire Notes Line
-	7800 5100 10450 5100
 Wire Notes Line
 	10450 5100 10450 6700
-Wire Notes Line
-	10450 6700 7800 6700
-Wire Notes Line
-	7800 6700 7800 5100
 Text Notes 10400 6700 2    50   ~ 0
 Bluetooth Interface
 Text Label 8150 1800 0    50   ~ 0
@@ -896,7 +607,7 @@ INTERBOARD_2
 Text Label 1550 6500 2    50   ~ 0
 AUDIO_ALERT
 $Comp
-L Device:C C7
+L controller-rescue:C-Device C7
 U 1 1 5E790961
 P 3500 5850
 F 0 "C7" H 3615 5896 50  0000 L CNN
@@ -907,7 +618,7 @@ F 3 "~" H 3500 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L controller-rescue:C-Device C6
 U 1 1 5E79140F
 P 2950 5850
 F 0 "C6" H 3065 5896 50  0000 L CNN
@@ -918,7 +629,7 @@ F 3 "~" H 2950 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0135
+L controller-rescue:GND-power #PWR0135
 U 1 1 5E793608
 P 3500 6000
 F 0 "#PWR0135" H 3500 5750 50  0001 C CNN
@@ -929,7 +640,7 @@ F 3 "" H 3500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0136
+L controller-rescue:GND-power #PWR0136
 U 1 1 5E793E53
 P 2950 6000
 F 0 "#PWR0136" H 2950 5750 50  0001 C CNN
@@ -945,7 +656,7 @@ Wire Wire Line
 	3500 5700 3950 5700
 Connection ~ 3500 5700
 $Comp
-L power:+5V #PWR0137
+L controller-rescue:+5V-power #PWR0137
 U 1 1 5E79E424
 P 2950 5700
 F 0 "#PWR0137" H 2950 5550 50  0001 C CNN
@@ -957,7 +668,7 @@ F 3 "" H 2950 5700 50  0001 C CNN
 $EndComp
 Connection ~ 2950 5700
 $Comp
-L Device:L L1
+L controller-rescue:L-Device L1
 U 1 1 5E79EA23
 P 4450 6550
 F 0 "L1" H 4503 6596 50  0000 L CNN
@@ -968,7 +679,7 @@ F 3 "~" H 4450 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Zener_ALT D1
+L controller-rescue:D_Zener_ALT-Device D1
 U 1 1 5E79F74F
 P 4850 6700
 F 0 "D1" H 4850 6800 50  0000 C CNN
@@ -991,7 +702,7 @@ F 4 "max732mja883b" H 1550 6500 50  0001 L BNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0138
+L controller-rescue:GND-power #PWR0138
 U 1 1 5E7AD985
 P 3950 6800
 F 0 "#PWR0138" H 3950 6550 50  0001 C CNN
@@ -1035,7 +746,7 @@ Wire Wire Line
 	5400 6700 5400 6800
 Connection ~ 5200 6700
 $Comp
-L power:GND #PWR0139
+L controller-rescue:GND-power #PWR0139
 U 1 1 5E7BFD3D
 P 5400 7100
 F 0 "#PWR0139" H 5400 6850 50  0001 C CNN
@@ -1053,7 +764,7 @@ Connection ~ 3950 6300
 Wire Wire Line
 	3950 6300 3950 6500
 $Comp
-L Device:C C8
+L controller-rescue:C-Device C8
 U 1 1 5E7D2A0C
 P 4150 7100
 F 0 "C8" H 4265 7146 50  0000 L CNN
@@ -1064,7 +775,7 @@ F 3 "~" H 4150 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0140
+L controller-rescue:GND-power #PWR0140
 U 1 1 5E7D36C8
 P 1550 7550
 F 0 "#PWR0140" H 1550 7300 50  0001 C CNN
@@ -1082,7 +793,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 7250 1550 6800
 $Comp
-L Device:C C5
+L controller-rescue:C-Device C5
 U 1 1 5E7D8771
 P 1550 7400
 F 0 "C5" H 1665 7446 50  0000 L CNN
@@ -1094,7 +805,7 @@ F 3 "~" H 1550 7400 50  0001 C CNN
 $EndComp
 Connection ~ 1550 7250
 $Comp
-L Device:C C4
+L controller-rescue:C-Device C4
 U 1 1 5E7D9B3F
 P 1200 6850
 F 0 "C4" H 1315 6896 50  0000 L CNN
@@ -1105,7 +816,7 @@ F 3 "~" H 1200 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0141
+L controller-rescue:GND-power #PWR0141
 U 1 1 5E7DA215
 P 1200 7000
 F 0 "#PWR0141" H 1200 6750 50  0001 C CNN
@@ -1118,7 +829,7 @@ $EndComp
 Wire Wire Line
 	1550 6700 1200 6700
 $Comp
-L Device:C C3
+L controller-rescue:C-Device C3
 U 1 1 5E7DEECC
 P 700 6850
 F 0 "C3" H 815 6896 50  0000 L CNN
@@ -1129,7 +840,7 @@ F 3 "~" H 700 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0142
+L controller-rescue:GND-power #PWR0142
 U 1 1 5E7DF12D
 P 700 7000
 F 0 "#PWR0142" H 700 6750 50  0001 C CNN
@@ -1144,7 +855,7 @@ Wire Wire Line
 Wire Wire Line
 	700  6600 700  6700
 $Comp
-L Connector:Screw_Terminal_01x02 J2
+L controller-rescue:Screw_Terminal_01x02-Connector J2
 U 1 1 5E7E19E2
 P 5950 6200
 F 0 "J2" H 6030 6192 50  0000 L CNN
@@ -1160,7 +871,7 @@ Wire Wire Line
 	5400 6200 5400 6700
 Connection ~ 5400 6700
 $Comp
-L power:GND #PWR0143
+L controller-rescue:GND-power #PWR0143
 U 1 1 5E7E4AE0
 P 5750 6300
 F 0 "#PWR0143" H 5750 6050 50  0001 C CNN
@@ -1185,10 +896,10 @@ INTERBOARD_0
 Text Label 8150 1600 0    50   ~ 0
 INTERBOARD_3
 $Comp
-L power:GND #PWR?
+L controller-rescue:GND-power #PWR0111
 U 1 1 5E8BE9E2
 P 7050 2500
-F 0 "#PWR?" H 7050 2250 50  0001 C CNN
+F 0 "#PWR0111" H 7050 2250 50  0001 C CNN
 F 1 "GND" H 7055 2327 50  0000 C CNN
 F 2 "" H 7050 2500 50  0001 C CNN
 F 3 "" H 7050 2500 50  0001 C CNN
@@ -1196,10 +907,10 @@ F 3 "" H 7050 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L controller-rescue:+3.3V-power #PWR0113
 U 1 1 5E8BEF17
 P 8150 2700
-F 0 "#PWR?" H 8150 2550 50  0001 C CNN
+F 0 "#PWR0113" H 8150 2550 50  0001 C CNN
 F 1 "+3.3V" V 8165 2828 50  0000 L CNN
 F 2 "" H 8150 2700 50  0001 C CNN
 F 3 "" H 8150 2700 50  0001 C CNN
@@ -1207,14 +918,74 @@ F 3 "" H 8150 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L controller-rescue:+3.3V-power #PWR0115
 U 1 1 5E8BF7B4
 P 7650 2700
-F 0 "#PWR?" H 7650 2550 50  0001 C CNN
+F 0 "#PWR0115" H 7650 2550 50  0001 C CNN
 F 1 "+3.3V" V 7665 2828 50  0000 L CNN
 F 2 "" H 7650 2700 50  0001 C CNN
 F 3 "" H 7650 2700 50  0001 C CNN
 	1    7650 2700
 	0    -1   1    0   
 $EndComp
+$Comp
+L WhitworthStandard:XBee XB1
+U 1 1 60ECAD1C
+P 9300 5700
+F 0 "XB1" H 9300 6137 60  0000 C CNN
+F 1 "XBee" H 9300 6031 60  0000 C CNN
+F 2 "WhitworthStandard:xbee-standard" H 9300 5700 60  0001 C CNN
+F 3 "" H 9300 5700 60  0001 C CNN
+	1    9300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 60EDA5DF
+P 8150 5500
+F 0 "#PWR0125" H 8150 5350 50  0001 C CNN
+F 1 "+3.3V" H 8150 5650 50  0000 C CNN
+F 2 "" H 8150 5500 50  0001 C CNN
+F 3 "" H 8150 5500 50  0001 C CNN
+	1    8150 5500
+	1    0    0    -1  
+$EndComp
+Text Label 8250 5650 2    47   ~ 0
+Local_TX
+Text Label 8250 5750 2    47   ~ 0
+Local_RX
+Text Label 8250 6350 2    50   ~ 0
+Local_WAKE
+Wire Wire Line
+	8250 5550 8150 5550
+Wire Wire Line
+	8150 5550 8150 5500
+NoConn ~ 8250 5950
+NoConn ~ 8250 6050
+NoConn ~ 8250 6150
+NoConn ~ 10350 6450
+NoConn ~ 10350 6350
+NoConn ~ 10350 6250
+NoConn ~ 10350 6150
+NoConn ~ 10350 6050
+NoConn ~ 10350 5950
+NoConn ~ 10350 5850
+NoConn ~ 10350 5750
+NoConn ~ 10350 5650
+NoConn ~ 10350 5550
+Text Label 6450 4100 0    50   ~ 0
+USB_D-
+Text Label 6450 4200 0    50   ~ 0
+USB_D+
+Text Label 8150 1000 0    50   ~ 0
+USB_D-
+Text Label 8150 1100 0    50   ~ 0
+USB_D+
+Wire Notes Line
+	10450 5100 7800 5100
+Wire Notes Line
+	7800 5100 7800 6700
+Wire Notes Line
+	7800 6700 10450 6700
+NoConn ~ 8250 6450
 $EndSCHEMATC

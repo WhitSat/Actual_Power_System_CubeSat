@@ -5,4 +5,6 @@
   (lib (name ADT7410TRZ)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/ADT7410TRZ/footprints.pretty)(options "")(descr ""))
   (lib (name MAX732MJA883B)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/MAX732MJA883B)(options "")(descr ""))
   (lib (name PCV1E271MCL2GS)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/PCV1E271MCL2GS)(options "")(descr ""))
+  (lib (name WhitworthStandard)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/WhitworthStandard.pretty)(options "")(descr ""))
+  (lib (name library)(type KiCad)(uri "C:/Program Files/KiCad/share/kicad/library")(options "")(descr ""))
 )
