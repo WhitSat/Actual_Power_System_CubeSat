@@ -1110,9 +1110,6 @@ Wire Wire Line
 	7700 5800 7750 5800
 NoConn ~ 3900 1250
 NoConn ~ 3900 1350
-NoConn ~ 3900 1850
-NoConn ~ 3900 1950
-NoConn ~ 3900 2050
 NoConn ~ 5700 2050
 NoConn ~ 5700 1950
 NoConn ~ 5700 1850
@@ -1140,4 +1137,31 @@ Text Notes 5800 2550 0    50   ~ 0
 Serial Multiplexer
 Text Label 8400 2450 0    50   ~ 0
 RADIO_WAKE
+$Comp
+L power:GND #PWR0125
+U 1 1 60F2B4AC
+P 3750 2150
+F 0 "#PWR0125" H 3750 1900 50  0001 C CNN
+F 1 "GND" H 3755 1977 50  0000 C CNN
+F 2 "" H 3750 2150 50  0001 C CNN
+F 3 "" H 3750 2150 50  0001 C CNN
+	1    3750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1850 3750 1850
+Wire Wire Line
+	3750 1850 3750 1950
+Wire Wire Line
+	3900 1950 3750 1950
+Connection ~ 3750 1950
+Wire Wire Line
+	3750 1950 3750 2050
+Wire Wire Line
+	3900 2050 3750 2050
+Connection ~ 3750 2050
+Wire Wire Line
+	3750 2050 3750 2150
+Text Notes 3100 850  0    50   ~ 0
+I2C Adress 0xB0
 $EndSCHEMATC
