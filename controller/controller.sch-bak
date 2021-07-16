@@ -1084,10 +1084,10 @@ Wire Wire Line
 Wire Wire Line
 	6250 1700 6250 1750
 $Comp
-L WhitworthStandard:ProteusIII U1
+L WhitworthStandard:ProteusIII U5
 U 1 1 60F28B2D
 P 8950 5450
-F 0 "U1" H 8650 4400 50  0000 C CNN
+F 0 "U5" H 8650 4400 50  0000 C CNN
 F 1 "ProteusIII" H 9400 5750 50  0000 C CNN
 F 2 "WhitworthStandard:Proteus_III_hand_solder" H 9100 5650 50  0001 C CNN
 F 3 "" H 9100 5650 50  0001 C CNN

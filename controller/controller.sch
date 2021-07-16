@@ -914,30 +914,6 @@ F 3 "" H 7900 2650 50  0001 C CNN
 	1    7900 2650
 	0    -1   1    0   
 $EndComp
-$Comp
-L power:+3.3V #PWR0125
-U 1 1 60EDA5DF
-P 10600 4150
-F 0 "#PWR0125" H 10600 4000 50  0001 C CNN
-F 1 "+3.3V" H 10600 4300 50  0000 C CNN
-F 2 "" H 10600 4150 50  0001 C CNN
-F 3 "" H 10600 4150 50  0001 C CNN
-	1    10600 4150
-	1    0    0    -1  
-$EndComp
-Text Label 10700 4300 2    47   ~ 0
-Local_TX
-Text Label 10700 4400 2    47   ~ 0
-Local_RX
-Text Label 10700 5000 2    50   ~ 0
-Local_WAKE
-Wire Wire Line
-	10700 4200 10600 4200
-Wire Wire Line
-	10600 4200 10600 4150
-NoConn ~ 10700 4600
-NoConn ~ 10700 4700
-NoConn ~ 10700 4800
 Text Label 6450 4100 0    50   ~ 0
 USB_D-
 Text Label 6450 4200 0    50   ~ 0
@@ -946,21 +922,6 @@ Text Label 8400 950  0    50   ~ 0
 USB_D-
 Text Label 8400 1050 0    50   ~ 0
 USB_D+
-Wire Wire Line
-	10700 5100 10600 5100
-Wire Wire Line
-	10600 5100 10600 5150
-$Comp
-L power:GND #PWR0126
-U 1 1 60F3C4D1
-P 10600 5150
-F 0 "#PWR0126" H 10600 4900 50  0001 C CNN
-F 1 "GND" H 10605 4977 50  0000 C CNN
-F 2 "" H 10600 5150 50  0001 C CNN
-F 3 "" H 10600 5150 50  0001 C CNN
-	1    10600 5150
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	9200 3050 9200 550 
 Wire Notes Line
