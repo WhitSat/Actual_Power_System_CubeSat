@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:power-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -227,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WhitworthStandard:PC104_40Pin_2.54mm J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -684,7 +683,7 @@ F 3 "" H 2550 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCV1D101MCL2GS:PCV1D101MCL2GS C3
+L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS C3
 U 1 1 5E81C7DD
 P 2850 3250
 F 0 "C3" V 2947 3354 60  0000 L CNN
@@ -755,7 +754,7 @@ F 3 "" H 2550 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PCV1D101MCL2GS:PCV1D101MCL2GS C4
+L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS C4
 U 1 1 5E825AA3
 P 2850 4500
 F 0 "C4" V 2947 4604 60  0000 L CNN
@@ -796,7 +795,7 @@ Wire Notes Line
 Text Notes 3750 5300 2    50   ~ 0
 Regulated 5 V and 3.3 V
 $Comp
-L ds2781e&plus_:ds2781e+ U1
+L power-rescue:ds2781e+-ds2781e&plus_ U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -931,7 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L LittleFuse_0157004.DRT:0157004.DRT F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN

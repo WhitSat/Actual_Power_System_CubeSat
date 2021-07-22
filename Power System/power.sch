@@ -5,12 +5,12 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Power System Board"
-Date "2020-01-14"
-Rev ""
+Date "2021-07-21"
+Rev "1"
 Comp "Whitworth University"
 Comment1 "Department of Engineering and Physics"
-Comment2 "John M. Larkin"
-Comment3 ""
+Comment2 "Margaret Fairborn"
+Comment3 "John M. Larkin"
 Comment4 ""
 $EndDescr
 $Comp
@@ -226,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -683,7 +683,7 @@ F 3 "" H 2550 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS C3
+L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS-power-rescue C3
 U 1 1 5E81C7DD
 P 2850 3250
 F 0 "C3" V 2947 3354 60  0000 L CNN
@@ -754,7 +754,7 @@ F 3 "" H 2550 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS C4
+L power-rescue:PCV1D101MCL2GS-PCV1D101MCL2GS-power-rescue C4
 U 1 1 5E825AA3
 P 2850 4500
 F 0 "C4" V 2947 4604 60  0000 L CNN
@@ -795,7 +795,7 @@ Wire Notes Line
 Text Notes 3750 5300 2    50   ~ 0
 Regulated 5 V and 3.3 V
 $Comp
-L power-rescue:ds2781e+-ds2781e&plus_ U1
+L power-rescue:ds2781e+-ds2781e&plus_-power-rescue U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -930,7 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L power-rescue:0157004.DRT-LittleFuse_0157004.DRT F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN
@@ -1118,4 +1118,275 @@ Wire Notes Line
 	550  2800 550  550 
 Text Notes 5400 2800 0    50   ~ 0
 Battery Monitor
+$Comp
+L SI3865DDVT1GE3:SI3865DDV-T1-GE3 MOSFET?
+U 1 1 60F87FD2
+P 4850 5700
+F 0 "MOSFET?" H 5650 6087 60  0000 C CNN
+F 1 "SI3865DDV-T1-GE3" H 5650 5981 60  0000 C CNN
+F 2 "TSOP6_MO-193C_VIS" H 5650 5940 60  0001 C CNN
+F 3 "" H 4850 5700 60  0000 C CNN
+	1    4850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5800 4850 5900
+Text Label 6450 5800 0    50   ~ 0
+PWR_ENABLE
+$Comp
+L Device:R R?
+U 1 1 60F8C6EF
+P 4700 5300
+F 0 "R?" V 4600 5300 50  0000 C CNN
+F 1 "2.2k" V 4700 5300 50  0000 C CNN
+F 2 "" V 4630 5300 50  0001 C CNN
+F 3 "~" H 4700 5300 50  0001 C CNN
+	1    4700 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 5300 4850 5700
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 60FA2167
+P 4550 5300
+F 0 "#PWR?" H 4550 5100 50  0001 C CNN
+F 1 "GNDPWR" H 4554 5146 50  0000 C CNN
+F 2 "" H 4550 5250 50  0001 C CNN
+F 3 "" H 4550 5250 50  0001 C CNN
+	1    4550 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60FA2E30
+P 7100 5800
+F 0 "R?" H 7170 5846 50  0000 L CNN
+F 1 "47k" V 7100 5750 50  0000 L CNN
+F 2 "" V 7030 5800 50  0001 C CNN
+F 3 "~" H 7100 5800 50  0001 C CNN
+	1    7100 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 5900
+$Comp
+L Device:C C?
+U 1 1 60FC8038
+P 4250 6050
+F 0 "C?" H 4365 6096 50  0000 L CNN
+F 1 "1000pF" H 4365 6005 50  0000 L CNN
+F 2 "" H 4288 5900 50  0001 C CNN
+F 3 "~" H 4250 6050 50  0001 C CNN
+	1    4250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5900 4250 5900
+Wire Wire Line
+	6450 5700 6450 5650
+Wire Wire Line
+	6450 5650 7100 5650
+Wire Wire Line
+	6450 5900 6450 5950
+Wire Wire Line
+	6450 5950 7100 5950
+Connection ~ 6450 5650
+$Comp
+L WhitworthStandard:+7.4V #PWR?
+U 1 1 60FF8AB1
+P 4250 5900
+F 0 "#PWR?" H 4250 5750 50  0001 C CNN
+F 1 "+7.4V" H 4265 6073 50  0000 C CNN
+F 2 "" H 4250 5900 50  0001 C CNN
+F 3 "" H 4250 5900 50  0001 C CNN
+	1    4250 5900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 5900
+Wire Wire Line
+	6450 5000 4050 5000
+Wire Wire Line
+	4050 5000 4050 6200
+Wire Wire Line
+	4050 6200 4250 6200
+Wire Wire Line
+	6450 5000 6450 5650
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 61008655
+P 7400 5950
+F 0 "#PWR?" H 7400 5750 50  0001 C CNN
+F 1 "GNDPWR" H 7404 5796 50  0000 C CNN
+F 2 "" H 7400 5900 50  0001 C CNN
+F 3 "" H 7400 5900 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5950 7400 5950
+Connection ~ 7100 5950
+$Comp
+L power:+BATT #PWR?
+U 1 1 610093D3
+P 7400 5950
+F 0 "#PWR?" H 7400 5800 50  0001 C CNN
+F 1 "+BATT" H 7415 6123 50  0000 C CNN
+F 2 "" H 7400 5950 50  0001 C CNN
+F 3 "" H 7400 5950 50  0001 C CNN
+	1    7400 5950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	3950 4950 7700 4950
+Wire Notes Line
+	7700 4950 7700 6550
+Wire Notes Line
+	7700 6550 3950 6550
+Wire Notes Line
+	3950 4950 3950 6550
+Text Notes 7050 6550 0    50   ~ 0
+Battery Connect
+Connection ~ 7400 5950
+$Comp
+L WhitworthStandard:R-783.3-1.0 U?
+U 1 1 61039A89
+P 1700 6700
+F 0 "U?" H 1700 7087 60  0000 C CNN
+F 1 "R-783.3-1.0" H 1700 6981 60  0000 C CNN
+F 2 "" H 1700 6700 60  0001 C CNN
+F 3 "" H 1700 6700 60  0001 C CNN
+	1    1700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L WhitworthStandard:R-785.0-1.0 PS?
+U 1 1 6103AE03
+P 1700 5900
+F 0 "PS?" H 1700 6267 50  0000 C CNN
+F 1 "R-785.0-1.0" H 1700 6176 50  0000 C CNN
+F 2 "CONV_R-785.0-1.0" H 1700 5900 50  0001 L BNN
+F 3 "10.20mm" H 1700 5900 50  0001 L BNN
+F 4 "RECOM" H 1700 5900 50  0001 L BNN "Field4"
+F 5 "4" H 1700 5900 50  0001 L BNN "Field5"
+F 6 "Manufacturer Recommendations" H 1700 5900 50  0001 L BNN "Field6"
+	1    1700 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6103C4A6
+P 2300 6000
+F 0 "#PWR?" H 2300 5800 50  0001 C CNN
+F 1 "GNDPWR" H 2304 5846 50  0000 C CNN
+F 2 "" H 2300 5950 50  0001 C CNN
+F 3 "" H 2300 5950 50  0001 C CNN
+	1    2300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 6103D394
+P 1700 7100
+F 0 "#PWR?" H 1700 6900 50  0001 C CNN
+F 1 "GNDPWR" H 1704 6946 50  0000 C CNN
+F 2 "" H 1700 7050 50  0001 C CNN
+F 3 "" H 1700 7050 50  0001 C CNN
+	1    1700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L WhitworthStandard:+7.4V #PWR?
+U 1 1 6103E406
+P 1100 5800
+F 0 "#PWR?" H 1100 5650 50  0001 C CNN
+F 1 "+7.4V" H 1115 5973 50  0000 C CNN
+F 2 "" H 1100 5800 50  0001 C CNN
+F 3 "" H 1100 5800 50  0001 C CNN
+	1    1100 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L WhitworthStandard:+7.4V #PWR?
+U 1 1 6103FAC0
+P 1150 6700
+F 0 "#PWR?" H 1150 6550 50  0001 C CNN
+F 1 "+7.4V" H 1165 6873 50  0000 C CNN
+F 2 "" H 1150 6700 50  0001 C CNN
+F 3 "" H 1150 6700 50  0001 C CNN
+	1    1150 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61040873
+P 2550 6900
+F 0 "C?" H 2665 6946 50  0000 L CNN
+F 1 "10uF" H 2665 6855 50  0000 L CNN
+F 2 "" H 2588 6750 50  0001 C CNN
+F 3 "~" H 2550 6900 50  0001 C CNN
+	1    2550 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 7050 2550 7050
+Wire Wire Line
+	2250 6700 2550 6700
+Wire Wire Line
+	2550 6700 2550 6750
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61050898
+P 2550 6700
+F 0 "#PWR?" H 2550 6550 50  0001 C CNN
+F 1 "+3.3V" H 2565 6873 50  0000 C CNN
+F 2 "" H 2550 6700 50  0001 C CNN
+F 3 "" H 2550 6700 50  0001 C CNN
+	1    2550 6700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 6700
+$Comp
+L Device:C C?
+U 1 1 61051914
+P 2700 5850
+F 0 "C?" H 2815 5896 50  0000 L CNN
+F 1 "10uF" H 2815 5805 50  0000 L CNN
+F 2 "" H 2738 5700 50  0001 C CNN
+F 3 "~" H 2700 5850 50  0001 C CNN
+	1    2700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6000 2700 6000
+Connection ~ 2300 6000
+Wire Wire Line
+	2300 5800 2300 5700
+Wire Wire Line
+	2300 5700 2700 5700
+$Comp
+L power:+5V #PWR?
+U 1 1 6105A92E
+P 2700 5700
+F 0 "#PWR?" H 2700 5550 50  0001 C CNN
+F 1 "+5V" H 2715 5873 50  0000 C CNN
+F 2 "" H 2700 5700 50  0001 C CNN
+F 3 "" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 5700
+Wire Notes Line
+	550  5400 3850 5400
+Wire Notes Line
+	3850 5400 3850 7350
+Wire Notes Line
+	3850 7350 550  7350
+Wire Notes Line
+	550  7350 550  5400
+Text Notes 2900 7350 0    50   ~ 0
+Regulated 5V and 3.3V
+Text Notes 6600 4600 0    50   ~ 0
+Old
+Text Notes 3250 5200 0    50   ~ 0
+Old
 $EndSCHEMATC
