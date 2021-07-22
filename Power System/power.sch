@@ -1214,12 +1214,12 @@ Wire Wire Line
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 61008655
-P 7400 5950
-F 0 "#PWR?" H 7400 5750 50  0001 C CNN
-F 1 "GNDPWR" H 7404 5796 50  0000 C CNN
-F 2 "" H 7400 5900 50  0001 C CNN
-F 3 "" H 7400 5900 50  0001 C CNN
-	1    7400 5950
+P 7400 6250
+F 0 "#PWR?" H 7400 6050 50  0001 C CNN
+F 1 "GNDPWR" H 7404 6096 50  0000 C CNN
+F 2 "" H 7400 6200 50  0001 C CNN
+F 3 "" H 7400 6200 50  0001 C CNN
+	1    7400 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1237,21 +1237,15 @@ F 3 "" H 7400 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	3950 4950 7700 4950
-Wire Notes Line
-	7700 4950 7700 6550
-Wire Notes Line
-	7700 6550 3950 6550
-Wire Notes Line
 	3950 4950 3950 6550
-Text Notes 7050 6550 0    50   ~ 0
+Text Notes 7150 6550 0    50   ~ 0
 Battery Connect
 Connection ~ 7400 5950
 $Comp
-L WhitworthStandard:R-783.3-1.0 U?
+L WhitworthStandard:R-783.3-1.0 PS?
 U 1 1 61039A89
 P 1700 6700
-F 0 "U?" H 1700 7087 60  0000 C CNN
+F 0 "PS?" H 1700 7087 60  0000 C CNN
 F 1 "R-783.3-1.0" H 1700 6981 60  0000 C CNN
 F 2 "" H 1700 6700 60  0001 C CNN
 F 3 "" H 1700 6700 60  0001 C CNN
@@ -1389,4 +1383,21 @@ Text Notes 6600 4600 0    50   ~ 0
 Old
 Text Notes 3250 5200 0    50   ~ 0
 Old
+$Comp
+L Device:C C?
+U 1 1 60F9FDCE
+P 7400 6100
+F 0 "C?" H 7515 6146 50  0000 L CNN
+F 1 "0.01uF" H 7515 6055 50  0000 L CNN
+F 2 "" H 7438 5950 50  0001 C CNN
+F 3 "~" H 7400 6100 50  0001 C CNN
+	1    7400 6100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7800 4950 7800 6550
+Wire Notes Line
+	3950 6550 7800 6550
+Wire Notes Line
+	3950 4950 7800 4950
 $EndSCHEMATC
