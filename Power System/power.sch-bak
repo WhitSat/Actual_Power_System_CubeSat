@@ -841,7 +841,7 @@ Wire Notes Line
 	500  5150 3200 5150
 Wire Notes Line
 	500  5150 500  3200
-Text Notes 2250 5100 0    50   ~ 0
+Text Notes 2250 5150 0    50   ~ 0
 Regulated 5V and 3.3V
 Connection ~ 2650 3500
 $Comp
