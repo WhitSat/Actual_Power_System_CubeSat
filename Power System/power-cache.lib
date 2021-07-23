@@ -171,11 +171,11 @@ X +VOUT 3 600 100 200 L 40 40 0 0 O
 ENDDRAW
 ENDDEF
 #
-# power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue
+# power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue
 #
-DEF power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue F 0 20 N N 1 L N
+DEF power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue F 0 20 N N 1 L N
 F0 "F" 200 125 60 H V C CNN
-F1 "power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue" 200 -250 60 H V C CNN
+F1 "power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue" 200 -250 60 H V C CNN
 F2 "0157Series" 200 -310 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -189,11 +189,11 @@ X ~ 2 400 0 100 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue
+# power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue
 #
-DEF power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue J 0 40 Y N 1 F N
+DEF power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue J 0 40 Y N 1 F N
 F0 "J" 50 1000 50 H V C CNN
-F1 "power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue" 50 -1100 50 H V C CNN
+F1 "power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue" 50 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -284,11 +284,11 @@ X Pin_9 9 -200 100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-rescue_ds2781e+-ds2781e&plus_-power-rescue
+# power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue
 #
-DEF power-rescue_ds2781e+-ds2781e&plus_-power-rescue U 0 10 Y Y 1 L N
+DEF power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue U 0 10 Y Y 1 L N
 F0 "U" 1100 400 60 H V C CNN
-F1 "power-rescue_ds2781e+-ds2781e&plus_-power-rescue" 1100 300 60 H V C CNN
+F1 "power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue" 1100 300 60 H V C CNN
 F2 "21-0175A" 1100 240 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
