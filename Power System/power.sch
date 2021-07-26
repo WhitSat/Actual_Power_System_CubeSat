@@ -226,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -514,7 +514,7 @@ F 3 "" H 5500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue U1
+L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -645,7 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN
