@@ -1,0 +1,485 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Satellite Communication Board"
+Date "2020-01-14"
+Rev ""
+Comp "Whitworth University"
+Comment1 "Department of Engineering and Physics"
+Comment2 "John M. Larkin"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L satellite_comm-rescue:+BATT-power #PWR0101
+U 1 1 5DB9296C
+P 9800 900
+F 0 "#PWR0101" H 9800 750 50  0001 C CNN
+F 1 "+BATT" H 9815 1073 50  0000 C CNN
+F 2 "" H 9800 900 50  0001 C CNN
+F 3 "" H 9800 900 50  0001 C CNN
+	1    9800 900 
+	1    0    0    1   
+$EndComp
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0101
+U 1 1 5DB92D9A
+P 9800 800
+F 0 "#FLG0101" H 9800 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 973 50  0000 C CNN
+F 2 "" H 9800 800 50  0001 C CNN
+F 3 "~" H 9800 800 50  0001 C CNN
+	1    9800 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 800  9800 900 
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0102
+U 1 1 5DB94156
+P 10300 800
+F 0 "#FLG0102" H 10300 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 10300 973 50  0000 C CNN
+F 2 "" H 10300 800 50  0001 C CNN
+F 3 "~" H 10300 800 50  0001 C CNN
+	1    10300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:+7.4V-WhitworthStandard #PWR0102
+U 1 1 5DB94A82
+P 10300 900
+F 0 "#PWR0102" H 10300 750 50  0001 C CNN
+F 1 "+7.4V" H 10315 1073 50  0000 C CNN
+F 2 "" H 10300 900 50  0001 C CNN
+F 3 "" H 10300 900 50  0001 C CNN
+	1    10300 900 
+	1    0    0    1   
+$EndComp
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0103
+U 1 1 5DB951CB
+P 9800 1650
+F 0 "#FLG0103" H 9800 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 1823 50  0000 C CNN
+F 2 "" H 9800 1650 50  0001 C CNN
+F 3 "~" H 9800 1650 50  0001 C CNN
+	1    9800 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:+3.3V-power #PWR0103
+U 1 1 5DB958B5
+P 10300 1750
+F 0 "#PWR0103" H 10300 1600 50  0001 C CNN
+F 1 "+3.3V" H 10315 1923 50  0000 C CNN
+F 2 "" H 10300 1750 50  0001 C CNN
+F 3 "" H 10300 1750 50  0001 C CNN
+	1    10300 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0104
+U 1 1 5DB95EE2
+P 10300 1650
+F 0 "#FLG0104" H 10300 1725 50  0001 C CNN
+F 1 "PWR_FLAG" H 10300 1823 50  0000 C CNN
+F 2 "" H 10300 1650 50  0001 C CNN
+F 3 "~" H 10300 1650 50  0001 C CNN
+	1    10300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:+5V-power #PWR0104
+U 1 1 5DB96D50
+P 9800 1750
+F 0 "#PWR0104" H 9800 1600 50  0001 C CNN
+F 1 "+5V" H 9815 1923 50  0000 C CNN
+F 2 "" H 9800 1750 50  0001 C CNN
+F 3 "" H 9800 1750 50  0001 C CNN
+	1    9800 1750
+	1    0    0    1   
+$EndComp
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0105
+U 1 1 5DB978AF
+P 9800 2500
+F 0 "#FLG0105" H 9800 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 9800 2673 50  0000 C CNN
+F 2 "" H 9800 2500 50  0001 C CNN
+F 3 "~" H 9800 2500 50  0001 C CNN
+	1    9800 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:GND-power #PWR0105
+U 1 1 5DB97F49
+P 9800 2600
+F 0 "#PWR0105" H 9800 2350 50  0001 C CNN
+F 1 "GND" H 9805 2427 50  0000 C CNN
+F 2 "" H 9800 2600 50  0001 C CNN
+F 3 "" H 9800 2600 50  0001 C CNN
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 800  10300 900 
+Wire Wire Line
+	9800 1650 9800 1750
+Wire Wire Line
+	10300 1650 10300 1750
+Wire Wire Line
+	9800 2500 9800 2600
+Text Label 8700 2200 0    50   ~ 0
+IRIDIUM_TX
+Text Label 8700 2100 0    50   ~ 0
+IRIDIUM_RX
+Text Label 8700 2400 0    50   ~ 0
+1_WIRE
+Text Label 8700 2000 0    50   ~ 0
+IRIDIUM_PWR_CTRL
+Text Label 8700 2300 0    50   ~ 0
+IRIDIUM_NET_AVAIL
+Text Label 8200 2400 2    50   ~ 0
+SPI_MOSI
+Text Label 8200 2300 2    50   ~ 0
+SPI_MISO
+Text Label 8200 2200 2    50   ~ 0
+SPI_CLK
+Text Label 8200 1900 2    50   ~ 0
+I2C_SDA
+Text Label 8200 1800 2    50   ~ 0
+I2C_SCL
+Text Label 8700 1200 0    50   ~ 0
+LED_A
+Text Label 8700 1300 0    50   ~ 0
+LED_B
+Text Label 8700 1400 0    50   ~ 0
+LED_C
+Text Label 8200 1400 2    50   ~ 0
+A0
+Text Label 8200 1300 2    50   ~ 0
+A1
+Text Label 8200 1200 2    50   ~ 0
+A2
+Text Label 8700 1500 0    50   ~ 0
+PWM
+Text Label 8200 2100 2    50   ~ 0
+DIO1
+Text Label 8700 2500 0    50   ~ 0
+RADIO_WAKE
+Text Label 8700 1100 0    50   ~ 0
+RADIO_RX
+Text Label 8700 1000 0    50   ~ 0
+RADIO_TX
+Text Label 8200 1500 2    50   ~ 0
+POD_WAKE
+Text Label 8200 1700 2    50   ~ 0
+POD_RX
+Text Label 8200 1600 2    50   ~ 0
+POD_TX
+$Comp
+L satellite_comm-rescue:+5V-power #PWR0106
+U 1 1 5DBA9AD1
+P 8700 900
+F 0 "#PWR0106" H 8700 750 50  0001 C CNN
+F 1 "+5V" V 8700 1050 50  0000 L CNN
+F 2 "" H 8700 900 50  0001 C CNN
+F 3 "" H 8700 900 50  0001 C CNN
+	1    8700 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L satellite_comm-rescue:GND-power #PWR0107
+U 1 1 5DBAA285
+P 7700 900
+F 0 "#PWR0107" H 7700 650 50  0001 C CNN
+F 1 "GND" H 7705 727 50  0000 C CNN
+F 2 "" H 7700 900 50  0001 C CNN
+F 3 "" H 7700 900 50  0001 C CNN
+	1    7700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:GNDS-power #PWR0108
+U 1 1 5DBABCBA
+P 7600 2000
+F 0 "#PWR0108" H 7600 1750 50  0001 C CNN
+F 1 "GNDS" H 7605 1827 50  0000 C CNN
+F 2 "" H 7600 2000 50  0001 C CNN
+F 3 "" H 7600 2000 50  0001 C CNN
+	1    7600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:GND-power #PWR0110
+U 1 1 5DBB128C
+P 8200 2800
+F 0 "#PWR0110" H 8200 2550 50  0001 C CNN
+F 1 "GND" H 8205 2627 50  0000 C CNN
+F 2 "" H 8200 2800 50  0001 C CNN
+F 3 "" H 8200 2800 50  0001 C CNN
+	1    8200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:PC104_40Pin_2.54mm-WhitworthStandard J1
+U 1 1 5DB909C2
+P 8400 1800
+F 0 "J1" H 8450 2917 50  0000 C CNN
+F 1 "PC104_40Pin_2.54mm" H 8450 2826 50  0000 C CNN
+F 2 "WhitworthStandard:PC104_40PinSocket_2.54mm" H 8400 1800 50  0001 C CNN
+F 3 "~" H 8400 1800 50  0001 C CNN
+	1    8400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:+7.4V-WhitworthStandard #PWR0112
+U 1 1 5E1E31F7
+P 8200 2600
+F 0 "#PWR0112" H 8200 2450 50  0001 C CNN
+F 1 "+7.4V" V 8215 2728 50  0000 L CNN
+F 2 "" H 8200 2600 50  0001 C CNN
+F 3 "" H 8200 2600 50  0001 C CNN
+	1    8200 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 2500 8200 2500
+Text Label 8200 1000 2    50   ~ 0
+EXT_TEMP
+Text Label 8200 1100 2    50   ~ 0
+A3
+$Comp
+L satellite_comm-rescue:+7.4V-WhitworthStandard #PWR0114
+U 1 1 5E1EC1FF
+P 8700 2600
+F 0 "#PWR0114" H 8700 2450 50  0001 C CNN
+F 1 "+7.4V" V 8715 2728 50  0000 L CNN
+F 2 "" H 8700 2600 50  0001 C CNN
+F 3 "" H 8700 2600 50  0001 C CNN
+	1    8700 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L satellite_comm-rescue:PWR_FLAG-power #FLG0107
+U 1 1 5E1F350A
+P 10300 2500
+F 0 "#FLG0107" H 10300 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 10300 2673 50  0000 C CNN
+F 2 "" H 10300 2500 50  0001 C CNN
+F 3 "~" H 10300 2500 50  0001 C CNN
+	1    10300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:GNDS-power #PWR0117
+U 1 1 5E1F3E4B
+P 10300 2650
+F 0 "#PWR0117" H 10300 2400 50  0001 C CNN
+F 1 "GNDS" H 10305 2477 50  0000 C CNN
+F 2 "" H 10300 2650 50  0001 C CNN
+F 3 "" H 10300 2650 50  0001 C CNN
+	1    10300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 2500 10300 2650
+Wire Notes Line
+	7250 550  9500 550 
+Wire Notes Line
+	9500 550  9500 3150
+Text Notes 8650 3150 0    50   ~ 0
+Interboard Connector
+$Comp
+L satellite_comm-rescue:+3.3V-power #PWR0109
+U 1 1 5E718EAD
+P 8700 2800
+F 0 "#PWR0109" H 8700 2650 50  0001 C CNN
+F 1 "+3.3V" V 8715 2928 50  0000 L CNN
+F 2 "" H 8700 2800 50  0001 C CNN
+F 3 "" H 8700 2800 50  0001 C CNN
+	1    8700 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 2000 7600 2000
+Text Label 8700 1800 0    50   ~ 0
+INTERBOARD_1
+Text Label 8700 1700 0    50   ~ 0
+INTERBOARD_2
+Text Label 8700 1900 0    50   ~ 0
+INTERBOARD_0
+Text Label 8700 1600 0    50   ~ 0
+INTERBOARD_3
+Wire Notes Line
+	7250 3150 7250 550 
+Wire Notes Line
+	9500 3150 7250 3150
+Wire Wire Line
+	7700 900  8200 900 
+$Comp
+L satellite_comm-rescue:GND-power #PWR0111
+U 1 1 5E8C3E58
+P 7600 2500
+F 0 "#PWR0111" H 7600 2250 50  0001 C CNN
+F 1 "GND" H 7605 2327 50  0000 C CNN
+F 2 "" H 7600 2500 50  0001 C CNN
+F 3 "" H 7600 2500 50  0001 C CNN
+	1    7600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:+3.3V-power #PWR0113
+U 1 1 5E8C4729
+P 8700 2700
+F 0 "#PWR0113" H 8700 2550 50  0001 C CNN
+F 1 "+3.3V" V 8715 2828 50  0000 L CNN
+F 2 "" H 8700 2700 50  0001 C CNN
+F 3 "" H 8700 2700 50  0001 C CNN
+	1    8700 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L satellite_comm-rescue:+3.3V-power #PWR0115
+U 1 1 5E8C4953
+P 8200 2700
+F 0 "#PWR0115" H 8200 2550 50  0001 C CNN
+F 1 "+3.3V" V 8215 2828 50  0000 L CNN
+F 2 "" H 8200 2700 50  0001 C CNN
+F 3 "" H 8200 2700 50  0001 C CNN
+	1    8200 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L satellite_comm-rescue:XBee-WhitworthStandard XB1
+U 1 1 5E8CD4F1
+P 5900 1150
+F 0 "XB1" H 5900 1587 60  0000 C CNN
+F 1 "XBee" H 5900 1481 60  0000 C CNN
+F 2 "WhitworthStandard:xbee-standard" H 5900 1150 60  0001 C CNN
+F 3 "" H 5900 1150 60  0001 C CNN
+	1    5900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:SAM-M8Q-SAM-M8Q U1
+U 1 1 5E90076A
+P 1300 3350
+F 0 "U1" H 2100 3737 60  0000 C CNN
+F 1 "SAM-M8Q" H 2100 3631 60  0000 C CNN
+F 2 "SAMM8Q:SAM-M8Q" H 2100 3590 60  0001 C CNN
+F 3 "" H 1300 3350 60  0000 C CNN
+	1    1300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L satellite_comm-rescue:53398-1071-Molex_533981071 J2
+U 1 1 5E9026D6
+P 8500 3850
+F 0 "J2" H 8628 3853 60  0000 L CNN
+F 1 "RockBLOCK9603" H 8628 3747 60  0000 L CNN
+F 2 "Molex_533981071:Molex_53398-1071" H 8500 3790 60  0001 C CNN
+F 3 "" H 8500 3850 60  0000 C CNN
+	1    8500 3850
+	1    0    0    -1  
+$EndComp
+Text Label 8100 3950 2    50   ~ 0
+IRIDIUM_RX
+Text Label 8100 3750 2    50   ~ 0
+IRIDIUM_NET_AVAIL
+Text Label 8100 3450 2    50   ~ 0
+IRIDIUM_TX
+Text Label 8100 4050 2    50   ~ 0
+IRIDIUM_PWR_CTRL
+$Comp
+L satellite_comm-rescue:+5V-power #PWR0116
+U 1 1 5E90A24E
+P 8100 4150
+F 0 "#PWR0116" H 8100 4000 50  0001 C CNN
+F 1 "+5V" V 8115 4278 50  0000 L CNN
+F 2 "" H 8100 4150 50  0001 C CNN
+F 3 "" H 8100 4150 50  0001 C CNN
+	1    8100 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L satellite_comm-rescue:GND-power #PWR0118
+U 1 1 5E90A95A
+P 8100 4350
+F 0 "#PWR0118" H 8100 4100 50  0001 C CNN
+F 1 "GND" H 8105 4177 50  0000 C CNN
+F 2 "" H 8100 4350 50  0001 C CNN
+F 3 "" H 8100 4350 50  0001 C CNN
+	1    8100 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8100 3550
+NoConn ~ 8100 3650
+NoConn ~ 8100 3850
+NoConn ~ 8100 4250
+$Comp
+L satellite_comm-rescue:+3.3V-power #PWR?
+U 1 1 5E8F4873
+P 4850 1000
+F 0 "#PWR?" H 4850 850 50  0001 C CNN
+F 1 "+3.3V" V 4865 1128 50  0000 L CNN
+F 2 "" H 4850 1000 50  0001 C CNN
+F 3 "" H 4850 1000 50  0001 C CNN
+	1    4850 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L satellite_comm-rescue:GND-power #PWR?
+U 1 1 5E8F4F90
+P 4850 1900
+F 0 "#PWR?" H 4850 1650 50  0001 C CNN
+F 1 "GND" H 4855 1727 50  0000 C CNN
+F 2 "" H 4850 1900 50  0001 C CNN
+F 3 "" H 4850 1900 50  0001 C CNN
+	1    4850 1900
+	1    0    0    -1  
+$EndComp
+Text Label 4850 1200 2    50   ~ 0
+POD_RX
+Text Label 4850 1100 2    50   ~ 0
+POD_TX
+Text Label 4850 1800 2    50   ~ 0
+POD_WAKE
+NoConn ~ 4850 1400
+NoConn ~ 4850 1500
+NoConn ~ 4850 1600
+NoConn ~ 6950 1000
+NoConn ~ 6950 1100
+NoConn ~ 6950 1200
+NoConn ~ 6950 1300
+NoConn ~ 6950 1400
+NoConn ~ 6950 1500
+NoConn ~ 6950 1600
+NoConn ~ 6950 1700
+NoConn ~ 6950 1800
+NoConn ~ 6950 1900
+Wire Notes Line
+	4350 550  7150 550 
+Wire Notes Line
+	7150 550  7150 2400
+Wire Notes Line
+	7150 2400 4350 2400
+Wire Notes Line
+	4350 2400 4350 550 
+Text Notes 7100 2400 2    50   ~ 0
+Cmd Module to Pods Communication
+Wire Notes Line
+	9500 3250 9500 4700
+Wire Notes Line
+	7250 4700 7250 3250
+Text Notes 9450 4700 2    50   ~ 0
+Satellite Modem Connector
+Wire Notes Line
+	7250 3250 9500 3250
+Wire Notes Line
+	7250 4700 9500 4700
+$EndSCHEMATC
