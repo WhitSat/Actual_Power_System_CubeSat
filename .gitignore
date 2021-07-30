@@ -23,3 +23,11 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+kicad_parts/digikey-kicad-library/
+controller/controller-cache.lib
+controller/controller-cache.lib
+Satellite Comm/fp-info-cache
+controller/controller-cache.lib
+*.sch-bak
+*.sch-bak
+controller/controller-cache.lib

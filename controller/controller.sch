@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L controller-rescue:+BATT-power #PWR0101
+L controller-rescue:+BATT-power-controller-rescue #PWR0101
 U 1 1 5DB9296C
 P 9800 900
 F 0 "#PWR0101" H 9800 750 50  0001 C CNN
@@ -25,7 +25,7 @@ F 3 "" H 9800 900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0101
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0101
 U 1 1 5DB92D9A
 P 9800 800
 F 0 "#FLG0101" H 9800 875 50  0001 C CNN
@@ -38,7 +38,7 @@ $EndComp
 Wire Wire Line
 	9800 800  9800 900 
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0102
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0102
 U 1 1 5DB94156
 P 10300 800
 F 0 "#FLG0102" H 10300 875 50  0001 C CNN
@@ -49,7 +49,7 @@ F 3 "~" H 10300 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:+7.4V-WhitworthStandard #PWR0102
+L controller-rescue:+7.4V-WhitworthStandard-controller-rescue #PWR0102
 U 1 1 5DB94A82
 P 10300 900
 F 0 "#PWR0102" H 10300 750 50  0001 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 10300 900 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0103
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0103
 U 1 1 5DB951CB
 P 9850 1650
 F 0 "#FLG0103" H 9850 1725 50  0001 C CNN
@@ -71,7 +71,7 @@ F 3 "~" H 9850 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:+3.3V-power #PWR0103
+L controller-rescue:+3.3V-power-controller-rescue #PWR0103
 U 1 1 5DB958B5
 P 10300 1750
 F 0 "#PWR0103" H 10300 1600 50  0001 C CNN
@@ -82,7 +82,7 @@ F 3 "" H 10300 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0104
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0104
 U 1 1 5DB95EE2
 P 10300 1650
 F 0 "#FLG0104" H 10300 1725 50  0001 C CNN
@@ -93,7 +93,7 @@ F 3 "~" H 10300 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:+5V-power #PWR0104
+L controller-rescue:+5V-power-controller-rescue #PWR0104
 U 1 1 5DB96D50
 P 9850 1750
 F 0 "#PWR0104" H 9850 1600 50  0001 C CNN
@@ -104,7 +104,7 @@ F 3 "" H 9850 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0105
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0105
 U 1 1 5DB978AF
 P 9400 2500
 F 0 "#FLG0105" H 9400 2575 50  0001 C CNN
@@ -115,7 +115,7 @@ F 3 "~" H 9400 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0105
+L controller-rescue:GND-power-controller-rescue #PWR0105
 U 1 1 5DB97F49
 P 9400 2600
 F 0 "#PWR0105" H 9400 2350 50  0001 C CNN
@@ -170,7 +170,7 @@ PWM
 Text Label 7900 2050 2    50   ~ 0
 DIO1
 $Comp
-L controller-rescue:+5V-power #PWR0106
+L controller-rescue:+5V-power-controller-rescue #PWR0106
 U 1 1 5DBA9AD1
 P 8400 850
 F 0 "#PWR0106" H 8400 700 50  0001 C CNN
@@ -181,7 +181,7 @@ F 3 "" H 8400 850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0107
+L controller-rescue:GND-power-controller-rescue #PWR0107
 U 1 1 5DBAA285
 P 7350 850
 F 0 "#PWR0107" H 7350 600 50  0001 C CNN
@@ -192,7 +192,7 @@ F 3 "" H 7350 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GNDS-power #PWR0108
+L controller-rescue:GNDS-power-controller-rescue #PWR0108
 U 1 1 5DBABCBA
 P 7300 1950
 F 0 "#PWR0108" H 7300 1700 50  0001 C CNN
@@ -203,7 +203,7 @@ F 3 "" H 7300 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0110
+L controller-rescue:GND-power-controller-rescue #PWR0110
 U 1 1 5DBB128C
 P 7900 2750
 F 0 "#PWR0110" H 7900 2500 50  0001 C CNN
@@ -214,7 +214,7 @@ F 3 "" H 7900 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:PC104_40Pin_2.54mm-WhitworthStandard-controller-rescue J1
+L WhitworthStandard:PC104_40Pin_2.54mm-WhitworthStandard J1
 U 1 1 5DB909C2
 P 8100 1750
 F 0 "J1" H 8150 2867 50  0000 C CNN
@@ -225,7 +225,7 @@ F 3 "~" H 8100 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:+7.4V-WhitworthStandard #PWR0112
+L controller-rescue:+7.4V-WhitworthStandard-controller-rescue #PWR0112
 U 1 1 5E1E31F7
 P 7900 2550
 F 0 "#PWR0112" H 7900 2400 50  0001 C CNN
@@ -242,7 +242,7 @@ EXT_TEMP
 Text Label 7900 1050 2    50   ~ 0
 A3
 $Comp
-L controller-rescue:+7.4V-WhitworthStandard #PWR0114
+L controller-rescue:+7.4V-WhitworthStandard-controller-rescue #PWR0114
 U 1 1 5E1EC1FF
 P 8400 2550
 F 0 "#PWR0114" H 8400 2400 50  0001 C CNN
@@ -253,7 +253,7 @@ F 3 "" H 8400 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L controller-rescue:GNDPWR-power #PWR0116
+L controller-rescue:GNDPWR-power-controller-rescue #PWR0116
 U 1 1 5E1F1571
 P 9850 2650
 F 0 "#PWR0116" H 9850 2450 50  0001 C CNN
@@ -264,7 +264,7 @@ F 3 "" H 9850 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0106
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0106
 U 1 1 5E1F21ED
 P 9850 2500
 F 0 "#FLG0106" H 9850 2575 50  0001 C CNN
@@ -275,7 +275,7 @@ F 3 "~" H 9850 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:PWR_FLAG-power #FLG0107
+L controller-rescue:PWR_FLAG-power-controller-rescue #FLG0107
 U 1 1 5E1F350A
 P 10300 2500
 F 0 "#FLG0107" H 10300 2575 50  0001 C CNN
@@ -286,7 +286,7 @@ F 3 "~" H 10300 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GNDS-power #PWR0117
+L controller-rescue:GNDS-power-controller-rescue #PWR0117
 U 1 1 5E1F3E4B
 P 10300 2650
 F 0 "#PWR0117" H 10300 2400 50  0001 C CNN
@@ -301,7 +301,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 2500 10300 2650
 $Comp
-L controller-rescue:LPC1768-WhitworthStandard MBED1
+L controller-rescue:LPC1768-WhitworthStandard-controller-rescue MBED1
 U 1 1 5E1E1462
 P 5700 4250
 F 0 "MBED1" H 5700 5487 60  0000 C CNN
@@ -312,7 +312,7 @@ F 3 "" H 5750 4250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0118
+L controller-rescue:GND-power-controller-rescue #PWR0118
 U 1 1 5E1E6F45
 P 4500 3300
 F 0 "#PWR0118" H 4500 3050 50  0001 C CNN
@@ -377,7 +377,7 @@ NoConn ~ 6450 3800
 NoConn ~ 6450 3900
 NoConn ~ 6450 4000
 $Comp
-L controller-rescue:GND-power #PWR0120
+L controller-rescue:GND-power-controller-rescue #PWR0120
 U 1 1 5E2103DF
 P 10200 3850
 F 0 "#PWR0120" H 10200 3600 50  0001 C CNN
@@ -392,7 +392,7 @@ I2C_SCL
 Text Label 7850 4350 2    50   ~ 0
 I2C_SDA
 $Comp
-L controller-rescue:+3.3V-power #PWR0121
+L controller-rescue:+3.3V-power-controller-rescue #PWR0121
 U 1 1 5E211018
 P 7850 3750
 F 0 "#PWR0121" H 7850 3600 50  0001 C CNN
@@ -428,7 +428,7 @@ NoConn ~ 1300 4600
 NoConn ~ 1300 4700
 NoConn ~ 1300 5000
 $Comp
-L controller-rescue:GND-power #PWR0122
+L controller-rescue:GND-power-controller-rescue #PWR0122
 U 1 1 5E68D194
 P 750 4800
 F 0 "#PWR0122" H 750 4550 50  0001 C CNN
@@ -443,7 +443,7 @@ Wire Wire Line
 Text Label 1000 4700 2    50   ~ 0
 I2C_SCL
 $Comp
-L controller-rescue:+3.3V-power #PWR0123
+L controller-rescue:+3.3V-power-controller-rescue #PWR0123
 U 1 1 5E6908E7
 P 1100 4300
 F 0 "#PWR0123" H 1100 4150 50  0001 C CNN
@@ -454,7 +454,7 @@ F 3 "" H 1100 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:R-Device R1
+L controller-rescue:R-Device-controller-rescue R1
 U 1 1 5E691908
 P 1100 4450
 F 0 "R1" V 1000 4400 50  0000 L CNN
@@ -474,7 +474,7 @@ Wire Wire Line
 	1100 4700 1100 4600
 Connection ~ 1100 4700
 $Comp
-L controller-rescue:+3.3V-power #PWR0124
+L controller-rescue:+3.3V-power-controller-rescue #PWR0124
 U 1 1 5E698065
 P 3500 4700
 F 0 "#PWR0124" H 3500 4550 50  0001 C CNN
@@ -485,7 +485,7 @@ F 3 "" H 3500 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:R-Device R2
+L controller-rescue:R-Device-controller-rescue R2
 U 1 1 5E698CA6
 P 3650 4850
 F 0 "R2" V 3750 4800 50  0000 L CNN
@@ -542,7 +542,7 @@ Wire Wire Line
 	7850 3950 7400 3950
 Connection ~ 7850 3950
 $Comp
-L controller-rescue:GND-power #PWR0132
+L controller-rescue:GND-power-controller-rescue #PWR0132
 U 1 1 5E716AE3
 P 7400 3950
 F 0 "#PWR0132" H 7400 3700 50  0001 C CNN
@@ -561,7 +561,7 @@ Wire Notes Line
 Wire Notes Line
 	7250 3100 7250 4850
 $Comp
-L controller-rescue:+7.4V-WhitworthStandard #PWR0119
+L controller-rescue:+7.4V-WhitworthStandard-controller-rescue #PWR0119
 U 1 1 5E716768
 P 4950 3400
 F 0 "#PWR0119" H 4950 3250 50  0001 C CNN
@@ -572,7 +572,7 @@ F 3 "" H 4950 3400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L controller-rescue:+3.3V-power #PWR0109
+L controller-rescue:+3.3V-power-controller-rescue #PWR0109
 U 1 1 5E718EAD
 P 8400 2750
 F 0 "#PWR0109" H 8400 2600 50  0001 C CNN
@@ -593,7 +593,7 @@ INTERBOARD_2
 Text Label 1550 6500 2    50   ~ 0
 AUDIO_ALERT
 $Comp
-L controller-rescue:C-Device C7
+L controller-rescue:C-Device-controller-rescue C7
 U 1 1 5E790961
 P 3500 5850
 F 0 "C7" H 3615 5896 50  0000 L CNN
@@ -604,7 +604,7 @@ F 3 "~" H 3500 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:C-Device C6
+L controller-rescue:C-Device-controller-rescue C6
 U 1 1 5E79140F
 P 2950 5850
 F 0 "C6" H 3065 5896 50  0000 L CNN
@@ -615,7 +615,7 @@ F 3 "~" H 2950 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0135
+L controller-rescue:GND-power-controller-rescue #PWR0135
 U 1 1 5E793608
 P 3500 6000
 F 0 "#PWR0135" H 3500 5750 50  0001 C CNN
@@ -626,7 +626,7 @@ F 3 "" H 3500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0136
+L controller-rescue:GND-power-controller-rescue #PWR0136
 U 1 1 5E793E53
 P 2950 6000
 F 0 "#PWR0136" H 2950 5750 50  0001 C CNN
@@ -642,7 +642,7 @@ Wire Wire Line
 	3500 5700 3950 5700
 Connection ~ 3500 5700
 $Comp
-L controller-rescue:+5V-power #PWR0137
+L controller-rescue:+5V-power-controller-rescue #PWR0137
 U 1 1 5E79E424
 P 2950 5700
 F 0 "#PWR0137" H 2950 5550 50  0001 C CNN
@@ -654,7 +654,7 @@ F 3 "" H 2950 5700 50  0001 C CNN
 $EndComp
 Connection ~ 2950 5700
 $Comp
-L controller-rescue:L-Device L1
+L controller-rescue:L-Device-controller-rescue L1
 U 1 1 5E79EA23
 P 4450 6550
 F 0 "L1" H 4503 6596 50  0000 L CNN
@@ -665,7 +665,7 @@ F 3 "~" H 4450 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:D_Zener_ALT-Device D1
+L controller-rescue:D_Zener_ALT-Device-controller-rescue D1
 U 1 1 5E79F74F
 P 4850 6700
 F 0 "D1" H 4850 6800 50  0000 C CNN
@@ -688,7 +688,7 @@ F 4 "max732mja883b" H 1550 6500 50  0001 L BNN "Field4"
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0138
+L controller-rescue:GND-power-controller-rescue #PWR0138
 U 1 1 5E7AD985
 P 3950 6800
 F 0 "#PWR0138" H 3950 6550 50  0001 C CNN
@@ -732,7 +732,7 @@ Wire Wire Line
 	5400 6700 5400 6800
 Connection ~ 5200 6700
 $Comp
-L controller-rescue:GND-power #PWR0139
+L controller-rescue:GND-power-controller-rescue #PWR0139
 U 1 1 5E7BFD3D
 P 5400 7100
 F 0 "#PWR0139" H 5400 6850 50  0001 C CNN
@@ -750,7 +750,7 @@ Connection ~ 3950 6300
 Wire Wire Line
 	3950 6300 3950 6500
 $Comp
-L controller-rescue:C-Device C8
+L controller-rescue:C-Device-controller-rescue C8
 U 1 1 5E7D2A0C
 P 4150 7100
 F 0 "C8" H 4265 7146 50  0000 L CNN
@@ -761,7 +761,7 @@ F 3 "~" H 4150 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0140
+L controller-rescue:GND-power-controller-rescue #PWR0140
 U 1 1 5E7D36C8
 P 1550 7550
 F 0 "#PWR0140" H 1550 7300 50  0001 C CNN
@@ -779,7 +779,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 7250 1550 6800
 $Comp
-L controller-rescue:C-Device C5
+L controller-rescue:C-Device-controller-rescue C5
 U 1 1 5E7D8771
 P 1550 7400
 F 0 "C5" H 1665 7446 50  0000 L CNN
@@ -791,7 +791,7 @@ F 3 "~" H 1550 7400 50  0001 C CNN
 $EndComp
 Connection ~ 1550 7250
 $Comp
-L controller-rescue:C-Device C4
+L controller-rescue:C-Device-controller-rescue C4
 U 1 1 5E7D9B3F
 P 1200 6850
 F 0 "C4" H 1315 6896 50  0000 L CNN
@@ -802,7 +802,7 @@ F 3 "~" H 1200 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0141
+L controller-rescue:GND-power-controller-rescue #PWR0141
 U 1 1 5E7DA215
 P 1200 7000
 F 0 "#PWR0141" H 1200 6750 50  0001 C CNN
@@ -815,7 +815,7 @@ $EndComp
 Wire Wire Line
 	1550 6700 1200 6700
 $Comp
-L controller-rescue:C-Device C3
+L controller-rescue:C-Device-controller-rescue C3
 U 1 1 5E7DEECC
 P 700 6850
 F 0 "C3" H 815 6896 50  0000 L CNN
@@ -826,7 +826,7 @@ F 3 "~" H 700 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:GND-power #PWR0142
+L controller-rescue:GND-power-controller-rescue #PWR0142
 U 1 1 5E7DF12D
 P 700 7000
 F 0 "#PWR0142" H 700 6750 50  0001 C CNN
@@ -841,7 +841,7 @@ Wire Wire Line
 Wire Wire Line
 	700  6600 700  6700
 $Comp
-L controller-rescue:Screw_Terminal_01x02-Connector J2
+L controller-rescue:Screw_Terminal_01x02-Connector-controller-rescue J2
 U 1 1 5E7E19E2
 P 5950 6200
 F 0 "J2" H 6030 6192 50  0000 L CNN
@@ -857,7 +857,7 @@ Wire Wire Line
 	5400 6200 5400 6700
 Connection ~ 5400 6700
 $Comp
-L controller-rescue:GND-power #PWR0143
+L controller-rescue:GND-power-controller-rescue #PWR0143
 U 1 1 5E7E4AE0
 P 5750 6300
 F 0 "#PWR0143" H 5750 6050 50  0001 C CNN
@@ -882,7 +882,7 @@ INTERBOARD_0
 Text Label 8400 1550 0    50   ~ 0
 INTERBOARD_3
 $Comp
-L controller-rescue:GND-power #PWR0111
+L controller-rescue:GND-power-controller-rescue #PWR0111
 U 1 1 5E8BE9E2
 P 7300 2450
 F 0 "#PWR0111" H 7300 2200 50  0001 C CNN
@@ -893,7 +893,7 @@ F 3 "" H 7300 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L controller-rescue:+3.3V-power #PWR0113
+L controller-rescue:+3.3V-power-controller-rescue #PWR0113
 U 1 1 5E8BEF17
 P 8400 2650
 F 0 "#PWR0113" H 8400 2500 50  0001 C CNN
@@ -904,7 +904,7 @@ F 3 "" H 8400 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L controller-rescue:+3.3V-power #PWR0115
+L controller-rescue:+3.3V-power-controller-rescue #PWR0115
 U 1 1 5E8BF7B4
 P 7900 2650
 F 0 "#PWR0115" H 7900 2500 50  0001 C CNN
