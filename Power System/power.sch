@@ -226,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -339,7 +339,7 @@ L Device:R R7
 U 1 1 5E7BB984
 P 8550 3650
 F 0 "R7" V 8650 3650 50  0000 C CNN
-F 1 "220" V 8550 3650 50  0000 C CNN
+F 1 "66.5" V 8550 3650 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 8480 3650 50  0001 C CNN
 F 3 "~" H 8550 3650 50  0001 C CNN
 	1    8550 3650
@@ -350,7 +350,7 @@ L Device:R R6
 U 1 1 5E7BCCF2
 P 8150 3750
 F 0 "R6" V 8250 3750 50  0000 C CNN
-F 1 "220" V 8150 3750 50  0000 C CNN
+F 1 "5.1" V 8150 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 8080 3750 50  0001 C CNN
 F 3 "~" H 8150 3750 50  0001 C CNN
 	1    8150 3750
@@ -361,7 +361,7 @@ L Device:R R5
 U 1 1 5E7BD315
 P 7750 3850
 F 0 "R5" V 7850 3850 50  0000 C CNN
-F 1 "220" V 7750 3850 50  0000 C CNN
+F 1 "3.4" V 7750 3850 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 7680 3850 50  0001 C CNN
 F 3 "~" H 7750 3850 50  0001 C CNN
 	1    7750 3850
@@ -514,7 +514,7 @@ F 3 "" H 5500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue U1
+L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -645,7 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN
@@ -722,7 +722,7 @@ L Device:R R2
 U 1 1 5E8E6FCA
 P 1600 1800
 F 0 "R2" V 1700 1800 50  0000 C CNN
-F 1 "500" V 1600 1800 50  0000 C CNN
+F 1 "499" V 1600 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1530 1800 50  0001 C CNN
 F 3 "~" H 1600 1800 50  0001 C CNN
 	1    1600 1800

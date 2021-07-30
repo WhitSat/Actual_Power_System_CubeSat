@@ -172,9 +172,9 @@ DIO1
 Text Label 9650 2500 0    50   ~ 0
 RADIO_WAKE
 Text Label 9650 1100 0    50   ~ 0
-RADIO_RX
+USB_D+
 Text Label 9650 1000 0    50   ~ 0
-RADIO_TX
+USB_B-
 Text Label 9150 1500 2    50   ~ 0
 POD_WAKE
 Text Label 9150 1700 2    50   ~ 0
@@ -226,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -301,7 +301,7 @@ INTERBOARD_1
 Text Label 9650 1700 0    50   ~ 0
 INTERBOARD_2
 Text Label 9650 1900 0    50   ~ 0
-INTERBOARD_0
+AUDIO_ALERT
 Text Label 9650 1600 0    50   ~ 0
 INTERBOARD_3
 Wire Notes Line
@@ -514,7 +514,7 @@ F 3 "" H 5500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue U1
+L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -645,7 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN
