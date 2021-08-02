@@ -688,6 +688,32 @@ Wire Notes Line
 	900  3500 5500 3500
 Wire Notes Line
 	900  5450 5500 5450
-Text Label 4000 4700 0    50   ~ 0
-RADIO_WAKE
+Text Label 1900 4800 2    50   ~ 0
+POD_WAKE
+Text Label 1900 4100 2    50   ~ 0
+POD_TX
+Text Label 1900 4200 2    50   ~ 0
+POD_RX
+Text Label 8850 5800 0    50   ~ 0
+I2C_SCL
+Text Label 7250 5800 2    50   ~ 0
+I2C_SDA
+NoConn ~ 8850 5600
+NoConn ~ 8850 5700
+NoConn ~ 8850 5100
+NoConn ~ 7250 5600
+NoConn ~ 7250 5700
+NoConn ~ 1900 4400
+NoConn ~ 1900 4500
+NoConn ~ 1900 4600
+NoConn ~ 4000 4000
+NoConn ~ 4000 4100
+NoConn ~ 4000 4200
+NoConn ~ 4000 4300
+NoConn ~ 4000 4400
+NoConn ~ 4000 4500
+NoConn ~ 4000 4600
+NoConn ~ 4000 4700
+NoConn ~ 4000 4800
+NoConn ~ 4000 4900
 $EndSCHEMATC
