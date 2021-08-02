@@ -1,4 +1,4 @@
-19240578788839787
+19242206730662787
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83054,6 +83054,13 @@ MountingHole_2.00mm
 0
 0
 0
+WhitworthStandard
+PC104_40PinSocket_2.54mm
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+40
+40
 WhitworthStandard
 RECOM-R-78xx-1.0
 
