@@ -377,9 +377,9 @@ F 3 "" H 9650 900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 9650 1000 0    50   ~ 0
-RADIO_TX
+USB_D-
 Text Label 9650 1100 0    50   ~ 0
-RADIO_RX
+USB_D+
 Text Label 9650 2500 0    50   ~ 0
 RADIO_WAKE
 Text Label 9650 1500 0    50   ~ 0
@@ -413,11 +413,11 @@ F 3 "" H 5150 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 2450 5500 2450
-Text Label 5500 1550 2    50   ~ 0
+Text Label 5500 2050 2    50   ~ 0
 IRIDIUM_RX
 Text Label 5500 1850 2    50   ~ 0
 IRIDIUM_NET_AVAIL
-Text Label 5500 2050 2    50   ~ 0
+Text Label 5500 1550 2    50   ~ 0
 IRIDIUM_TX
 $Comp
 L power:+5V #PWR?
@@ -433,19 +433,6 @@ $EndComp
 Wire Wire Line
 	5500 2250 4600 2250
 $Comp
-L power:+3.3V #PWR?
-U 1 1 610C7ABA
-P 4400 2350
-F 0 "#PWR?" H 4400 2200 50  0001 C CNN
-F 1 "+3.3V" H 4415 2523 50  0000 C CNN
-F 2 "" H 4400 2350 50  0001 C CNN
-F 3 "" H 4400 2350 50  0001 C CNN
-	1    4400 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 2350 5500 2350
-$Comp
 L WhitworthStandard:XBee XB?
 U 1 1 610CDD59
 P 2750 4200
@@ -456,10 +443,6 @@ F 3 "" H 2750 4200 60  0001 C CNN
 	1    2750 4200
 	1    0    0    -1  
 $EndComp
-Text Label 5500 1650 2    50   ~ 0
-IRIDIUM_CTS
-Text Label 5500 1750 2    50   ~ 0
-IRIDIUM_RTS
 Text Label 5500 1950 2    50   ~ 0
 IRIDIUM_RI
 Text Label 5500 2150 2    50   ~ 0
@@ -769,4 +752,7 @@ Wire Notes Line
 	5800 4400 10300 4400
 Wire Notes Line
 	5800 6600 10300 6600
+NoConn ~ 5500 2350
+NoConn ~ 5500 1650
+NoConn ~ 5500 1750
 $EndSCHEMATC

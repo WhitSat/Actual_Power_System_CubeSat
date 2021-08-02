@@ -9,8 +9,8 @@ Date "2021-08-02"
 Rev ""
 Comp "Whitworth University"
 Comment1 "Department of Engineering and Physics"
-Comment2 "Margaret Fairborn"
-Comment3 ""
+Comment2 "John M. Larkin"
+Comment3 "Margaret Fairborn"
 Comment4 ""
 $EndDescr
 $Comp
