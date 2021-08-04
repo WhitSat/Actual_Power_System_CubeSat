@@ -731,8 +731,6 @@ $EndComp
 NoConn ~ 5500 1750
 Text Label 5500 2150 2    50   ~ 0
 IRIDIUM_PWR_CTRL
-Text Label 5500 1950 2    50   ~ 0
-IRIDIUM_RI
 Text Label 5500 1850 2    50   ~ 0
 IRIDIUM_NET_AVAIL
 Text Label 5500 2050 2    50   ~ 0
@@ -757,4 +755,6 @@ Wire Wire Line
 	5500 2450 5050 2450
 Wire Wire Line
 	5050 2450 5050 2500
+NoConn ~ 5500 1950
+NoConn ~ 1350 5800
 $EndSCHEMATC
