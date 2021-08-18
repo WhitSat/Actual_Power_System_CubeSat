@@ -9,8 +9,8 @@ Date "2020-01-14"
 Rev ""
 Comp "Whitworth University"
 Comment1 "Department of Engineering and Physics"
-Comment2 "John M. Larkin"
-Comment3 ""
+Comment2 "Grant McDonald"
+Comment3 "John M. Larkin"
 Comment4 ""
 $EndDescr
 $Comp
@@ -413,7 +413,7 @@ Interboard Connector
 Text Notes 9250 4850 0    50   ~ 0
 Internal Temperature Sensor
 $Comp
-L 2020-03-09_16-09-33:FM24W256-G U1
+L controller-rescue:FM24W256-G-2020-03-09_16-09-33 U1
 U 1 1 5E688922
 P 1300 4500
 F 0 "U1" H 2400 4888 60  0000 C CNN
@@ -522,7 +522,7 @@ I2C address set to 0xA0
 Wire Wire Line
 	4950 3300 4500 3300
 $Comp
-L ADT7410TRZ:ADT7410TRZ U3
+L controller-rescue:ADT7410TRZ-ADT7410TRZ U3
 U 1 1 5E7101E3
 P 7850 3750
 F 0 "U3" H 8950 4137 60  0000 C CNN
@@ -584,7 +584,7 @@ F 3 "" H 8400 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 1950 7300 1950
-Text Notes 10450 6700 2    50   ~ 0
+Text Notes 2700 3700 2    50   ~ 0
 Bluetooth Interface
 Text Label 8400 1750 0    50   ~ 0
 INTERBOARD_1
@@ -667,16 +667,16 @@ $EndComp
 $Comp
 L controller-rescue:D_Zener_ALT-Device D1
 U 1 1 5E79F74F
-P 4850 6700
-F 0 "D1" H 4850 6800 50  0000 C CNN
-F 1 "D_Zener_ALT" H 4850 6900 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4850 6700 50  0001 C CNN
-F 3 "~" H 4850 6700 50  0001 C CNN
-	1    4850 6700
-	-1   0    0    1   
+P 5550 6200
+F 0 "D1" H 5550 6300 50  0000 C CNN
+F 1 "Zener 8.2 V" H 5600 6100 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5550 6200 50  0001 C CNN
+F 3 "~" H 5550 6200 50  0001 C CNN
+	1    5550 6200
+	1    0    0    -1  
 $EndComp
 $Comp
-L MAX732MJA883B:MAX732MJA883B U4
+L controller-rescue:MAX732MJA883B-MAX732MJA883B U4
 U 1 1 5E7AC391
 P 1550 6500
 F 0 "U4" H 2750 6650 50  0000 C CNN
@@ -716,7 +716,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 6600 3950 6600
 $Comp
-L PCV1E271MCL2GS:PCV1E271MCL2GS C9
+L controller-rescue:PCV1E271MCL2GS-PCV1E271MCL2GS C9
 U 1 1 5E7BD8C6
 P 5400 6800
 F 0 "C9" V 5504 6904 50  0000 L CNN
@@ -852,8 +852,6 @@ F 3 "~" H 5950 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 6200 5400 6200
-Wire Wire Line
 	5400 6200 5400 6700
 Connection ~ 5400 6700
 $Comp
@@ -927,62 +925,9 @@ Wire Notes Line
 Wire Notes Line
 	6950 550  6950 3050
 Wire Notes Line
-	7600 4950 7600 6700
-Wire Notes Line
 	10450 4950 10450 6700
-Wire Wire Line
-	8450 5400 8350 5400
-Wire Wire Line
-	8350 5400 8350 5300
-Wire Wire Line
-	8350 5300 8450 5300
 $Comp
-L power:GND #PWR0127
-U 1 1 60F94461
-P 10100 6350
-F 0 "#PWR0127" H 10100 6100 50  0001 C CNN
-F 1 "GND" H 10105 6177 50  0000 C CNN
-F 2 "" H 10100 6350 50  0001 C CNN
-F 3 "" H 10100 6350 50  0001 C CNN
-	1    10100 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 6500 9000 6550
-Wire Wire Line
-	9000 6550 9100 6550
-Wire Wire Line
-	9100 6500 9100 6550
-Connection ~ 9100 6550
-$Comp
-L power:+3.3V #PWR0128
-U 1 1 60F9D971
-P 8000 5200
-F 0 "#PWR0128" H 8000 5050 50  0001 C CNN
-F 1 "+3.3V" H 8015 5373 50  0000 C CNN
-F 2 "" H 8000 5200 50  0001 C CNN
-F 3 "" H 8000 5200 50  0001 C CNN
-	1    8000 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8200 5100 8200 5300
-Wire Wire Line
-	8200 5300 8000 5300
-Wire Wire Line
-	8000 5300 8000 5200
-Wire Wire Line
-	8200 5100 9000 5100
-Wire Wire Line
-	9750 6550 9750 6250
-Wire Wire Line
-	9750 6250 10100 6250
-Wire Wire Line
-	10100 6250 10100 6350
-Wire Wire Line
-	9100 6550 9750 6550
-$Comp
-L WhitworthStandard:ZDU0110RFX U2
+L controller-rescue:ZDU0110RFX-WhitworthStandard U2
 U 1 1 60FB5894
 P 4800 1550
 F 0 "U2" H 4800 2115 50  0000 C CNN
@@ -1044,70 +989,8 @@ Wire Wire Line
 	5700 1700 6250 1700
 Wire Wire Line
 	6250 1700 6250 1750
-$Comp
-L WhitworthStandard:ProteusIII U5
-U 1 1 60F28B2D
-P 8950 5450
-F 0 "U5" H 8650 4400 50  0000 C CNN
-F 1 "ProteusIII" H 9400 5750 50  0000 C CNN
-F 2 "WhitworthStandard:Proteus_III_hand_solder" H 9100 5650 50  0001 C CNN
-F 3 "" H 9100 5650 50  0001 C CNN
-	1    8950 5450
-	1    0    0    -1  
-$EndComp
-Text Label 9750 5750 0    47   ~ 0
-BT_RX
-Text Label 9750 5650 0    47   ~ 0
-BT_TX
-$Comp
-L Jumper:Jumper_3_Open JP1
-U 1 1 60FD7061
-P 8000 5800
-F 0 "JP1" H 8000 6024 50  0000 C CNN
-F 1 "Jumper_3_Open" H 8000 5933 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 5800 50  0001 C CNN
-F 3 "~" H 8000 5800 50  0001 C CNN
-	1    8000 5800
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7600 4950 10450 4950
-Wire Notes Line
-	7600 6700 10450 6700
-Wire Wire Line
-	8450 6100 8000 6100
-Wire Wire Line
-	8000 6100 8000 5950
-$Comp
-L power:GND #PWR0131
-U 1 1 60FE05D6
-P 7700 6000
-F 0 "#PWR0131" H 7700 5750 50  0001 C CNN
-F 1 "GND" H 7705 5827 50  0000 C CNN
-F 2 "" H 7700 6000 50  0001 C CNN
-F 3 "" H 7700 6000 50  0001 C CNN
-	1    7700 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0133
-U 1 1 60FE109D
-P 8350 5650
-F 0 "#PWR0133" H 8350 5500 50  0001 C CNN
-F 1 "+3.3V" H 8365 5823 50  0000 C CNN
-F 2 "" H 8350 5650 50  0001 C CNN
-F 3 "" H 8350 5650 50  0001 C CNN
-	1    8350 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8250 5800 8350 5800
-Wire Wire Line
-	8350 5800 8350 5650
-Wire Wire Line
-	7700 6000 7700 5800
-Wire Wire Line
-	7700 5800 7750 5800
 NoConn ~ 3900 1250
 NoConn ~ 3900 1350
 NoConn ~ 5700 2050
@@ -1115,16 +998,6 @@ NoConn ~ 5700 1950
 NoConn ~ 5700 1850
 NoConn ~ 5700 1550
 NoConn ~ 5700 1450
-NoConn ~ 8450 5900
-NoConn ~ 8450 5800
-NoConn ~ 8450 5700
-NoConn ~ 8450 5600
-NoConn ~ 9750 5300
-NoConn ~ 9750 5400
-NoConn ~ 9750 5850
-NoConn ~ 9750 5950
-NoConn ~ 9750 6050
-NoConn ~ 8450 6200
 Wire Notes Line
 	6550 750  6550 2550
 Wire Notes Line
@@ -1149,12 +1022,7 @@ F 3 "" H 3750 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 1850 3750 1850
-Wire Wire Line
-	3750 1850 3750 1950
-Wire Wire Line
 	3900 1950 3750 1950
-Connection ~ 3750 1950
 Wire Wire Line
 	3750 1950 3750 2050
 Wire Wire Line
@@ -1164,4 +1032,123 @@ Wire Wire Line
 	3750 2050 3750 2150
 Text Notes 3100 850  0    50   ~ 0
 I2C Adress 0xB0
+Text Label 3900 1850 2    50   ~ 0
+UART_INT
+Text Label 6450 4900 0    50   ~ 0
+UART_INT
+$Comp
+L RN4678-V_RM100:RN4678-V_RM100 U5
+U 1 1 611B05E1
+P 1700 2100
+F 0 "U5" H 1700 3767 50  0000 C CNN
+F 1 "RN4678-V_RM100" H 1700 3676 50  0000 C CNN
+F 2 "WhitworthStandard:RM100" H 1700 2100 50  0001 L BNN
+F 3 "" H 1700 2100 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 1700 2100 50  0001 L BNN "STANDARD"
+F 5 "Microchip" H 1700 2100 50  0001 L BNN "MANUFACTURER"
+	1    1700 2100
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2900 3750 2900 500 
+Wire Notes Line
+	2900 500  550  500 
+Wire Notes Line
+	550  500  550  3750
+Wire Notes Line
+	550  3750 2900 3750
+Text Label 900  1700 2    50   ~ 0
+BT_TX
+Text Label 900  1600 2    50   ~ 0
+BT_RX
+$Comp
+L power:GND #PWR01
+U 1 1 611D49E3
+P 2750 2750
+F 0 "#PWR01" H 2750 2500 50  0001 C CNN
+F 1 "GND" H 2755 2577 50  0000 C CNN
+F 2 "" H 2750 2750 50  0001 C CNN
+F 3 "" H 2750 2750 50  0001 C CNN
+	1    2750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2750 2500 2750
+Wire Wire Line
+	2500 2750 2500 3500
+$Comp
+L pspice:CAP C1
+U 1 1 611D84D1
+P 2600 2300
+F 0 "C1" V 2400 2300 50  0000 C CNN
+F 1 "10uF" V 2800 2300 50  0000 C CNN
+F 2 "digikey-footprints:1206" H 2600 2300 50  0001 C CNN
+F 3 "~" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 700  2650 700 
+Wire Wire Line
+	2650 700  2650 2000
+Wire Wire Line
+	2650 2000 2350 2000
+Wire Wire Line
+	2350 2000 2350 2300
+$Comp
+L power:+3.3V #PWR02
+U 1 1 611DC44C
+P 2800 2000
+F 0 "#PWR02" H 2800 1850 50  0001 C CNN
+F 1 "+3.3V" H 2815 2173 50  0000 C CNN
+F 2 "" H 2800 2000 50  0001 C CNN
+F 3 "" H 2800 2000 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2000 2800 2000
+Connection ~ 2650 2000
+Wire Wire Line
+	2850 2750 2750 2750
+Wire Wire Line
+	2850 2300 2850 2750
+Connection ~ 2750 2750
+NoConn ~ 900  1000
+NoConn ~ 900  1100
+NoConn ~ 900  1200
+NoConn ~ 900  1400
+NoConn ~ 900  1900
+NoConn ~ 900  2000
+NoConn ~ 900  2200
+NoConn ~ 900  2300
+NoConn ~ 900  2500
+NoConn ~ 900  2600
+NoConn ~ 900  2800
+NoConn ~ 900  2900
+NoConn ~ 900  3000
+NoConn ~ 900  3100
+NoConn ~ 900  3200
+NoConn ~ 900  3300
+NoConn ~ 2500 1900
+NoConn ~ 2500 1700
+NoConn ~ 2500 1600
+NoConn ~ 2500 1400
+NoConn ~ 2500 1200
+NoConn ~ 2500 1100
+NoConn ~ 2500 1000
+NoConn ~ 2500 800 
+$Comp
+L Diode:1N5817 D2
+U 1 1 611DA1F0
+P 4850 6700
+F 0 "D2" H 4850 6600 50  0000 C CNN
+F 1 "1N5817" H 4850 6800 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4850 6525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 4850 6700 50  0001 C CNN
+	1    4850 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 6200 5750 6200
 $EndSCHEMATC

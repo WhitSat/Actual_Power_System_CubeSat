@@ -358,4 +358,5 @@
   (lib (name Video)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Video.lib)(options "")(descr ""))
   (lib (name WhitworthStandard_old)(type Legacy)(uri ${COMMOD_CMN}/kicad_parts/WhitworthStandard.lib)(options "")(descr "")(disabled))
   (lib (name WhitworthStandard)(type Legacy)(uri ${COMMOD_CMN}/kicad_parts/WhitworthStandard/WhitworthStandard.lib)(options "")(descr ""))
+  (lib (name RN4678-V_RM100)(type Legacy)(uri D:/CommandModule2/kicad_parts/RN4678-V_RM100/RN4678-V_RM100.lib)(options "")(descr ""))
 )
