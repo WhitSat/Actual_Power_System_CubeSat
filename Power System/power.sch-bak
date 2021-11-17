@@ -4,13 +4,13 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Power System Board"
-Date "2021-07-21"
+Title "Power System Board CubeSat"
+Date "2021-11-17"
 Rev "1"
 Comp "Whitworth University"
 Comment1 "Department of Engineering and Physics"
-Comment2 "Margaret Fairborn"
-Comment3 "John M. Larkin"
+Comment2 "John Larkin"
+Comment3 "Margaret Fairborn"
 Comment4 ""
 $EndDescr
 $Comp
@@ -226,7 +226,7 @@ F 3 "" H 9150 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J1
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J1
 U 1 1 5DB909C2
 P 9350 1800
 F 0 "J1" H 9400 2917 50  0000 C CNN
@@ -514,7 +514,7 @@ F 3 "" H 5500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue U1
+L power-rescue:ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue U1
 U 1 1 5E836296
 P 2550 1500
 F 0 "U1" H 3650 1887 60  0000 C CNN
@@ -645,7 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 1550 1150 1550
 $Comp
-L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue F1
+L power-rescue:0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue F1
 U 1 1 5E83C5FB
 P 1350 2300
 F 0 "F1" V 1600 2200 60  0000 R CNN
@@ -945,7 +945,7 @@ F 3 "" H 2250 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L WhitworthStandard:R-785.0-1.0 PS1
+L power-rescue:R-785.0-1.0-WhitworthStandard PS1
 U 1 1 6103AE03
 P 1650 3700
 F 0 "PS1" H 1650 4067 50  0000 C CNN
@@ -961,141 +961,129 @@ $EndComp
 $Comp
 L Device:C C5
 U 1 1 60FC8038
-P 3750 5150
-F 0 "C5" H 3865 5196 50  0000 L CNN
-F 1 "1000pF" H 3865 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3788 5000 50  0001 C CNN
-F 3 "~" H 3750 5150 50  0001 C CNN
-	1    3750 5150
+P 3700 4350
+F 0 "C5" H 3815 4396 50  0000 L CNN
+F 1 "1000pF" H 3815 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 3738 4200 50  0001 C CNN
+F 3 "~" H 3700 4350 50  0001 C CNN
+	1    3700 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 5000 3750 5000
+	4300 4200 3700 4200
 $Comp
 L WhitworthStandard:+7.4V #PWR0132
 U 1 1 60FF8AB1
-P 3750 5000
-F 0 "#PWR0132" H 3750 4850 50  0001 C CNN
-F 1 "+7.4V" H 3765 5173 50  0000 C CNN
-F 2 "" H 3750 5000 50  0001 C CNN
-F 3 "" H 3750 5000 50  0001 C CNN
-	1    3750 5000
+P 3700 4200
+F 0 "#PWR0132" H 3700 4050 50  0001 C CNN
+F 1 "+7.4V" H 3715 4373 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
 	1    0    0    -1  
 $EndComp
-Connection ~ 3750 5000
+Connection ~ 3700 4200
 Wire Wire Line
-	5950 4100 3550 4100
+	5900 3300 3500 3300
 Wire Wire Line
-	3550 4100 3550 5300
+	3500 3300 3500 4500
 Wire Wire Line
-	3550 5300 3750 5300
+	3500 4500 3700 4500
 Wire Notes Line
-	3450 4050 3450 5650
+	3400 3250 3400 4850
 Wire Notes Line
-	3450 5650 7300 5650
+	3400 4850 7250 4850
 Wire Notes Line
-	3450 4050 7300 4050
-Connection ~ 4350 5000
+	3400 3250 7250 3250
+Connection ~ 4300 4200
 Wire Notes Line
-	7300 4050 7300 5650
-$Comp
-L Device:C C6
-U 1 1 60F9FDCE
-P 6900 5200
-F 0 "C6" H 7015 5246 50  0000 L CNN
-F 1 "0.01uF" H 7015 5155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6938 5050 50  0001 C CNN
-F 3 "~" H 6900 5200 50  0001 C CNN
-	1    6900 5200
-	1    0    0    -1  
-$EndComp
-Connection ~ 6900 5050
-Text Notes 6650 5650 0    50   ~ 0
+	7250 3250 7250 4850
+Text Notes 6600 4850 0    50   ~ 0
 Battery Connect
 $Comp
 L power:+BATT #PWR0133
 U 1 1 610093D3
-P 6900 5050
-F 0 "#PWR0133" H 6900 4900 50  0001 C CNN
-F 1 "+BATT" H 6915 5223 50  0000 C CNN
-F 2 "" H 6900 5050 50  0001 C CNN
-F 3 "" H 6900 5050 50  0001 C CNN
-	1    6900 5050
+P 6850 4250
+F 0 "#PWR0133" H 6850 4100 50  0001 C CNN
+F 1 "+BATT" H 6865 4423 50  0000 C CNN
+F 2 "" H 6850 4250 50  0001 C CNN
+F 3 "" H 6850 4250 50  0001 C CNN
+	1    6850 4250
 	1    0    0    -1  
 $EndComp
-Connection ~ 6600 5050
+Connection ~ 6550 4250
 Wire Wire Line
-	6600 5050 6900 5050
+	6550 4250 6850 4250
 $Comp
 L power:GNDPWR #PWR0134
 U 1 1 61008655
-P 6900 5350
-F 0 "#PWR0134" H 6900 5150 50  0001 C CNN
-F 1 "GNDPWR" H 6904 5196 50  0000 C CNN
-F 2 "" H 6900 5300 50  0001 C CNN
-F 3 "" H 6900 5300 50  0001 C CNN
-	1    6900 5350
+P 6850 4550
+F 0 "#PWR0134" H 6850 4350 50  0001 C CNN
+F 1 "GNDPWR" H 6854 4396 50  0000 C CNN
+F 2 "" H 6850 4500 50  0001 C CNN
+F 3 "" H 6850 4500 50  0001 C CNN
+	1    6850 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 4100 5950 4750
-Connection ~ 5950 4750
+	5900 3300 5900 3950
+Connection ~ 5900 3950
 Wire Wire Line
-	5950 5050 6600 5050
+	5900 4250 6550 4250
 Wire Wire Line
-	5950 5000 5950 5050
+	5900 4200 5900 4250
 Wire Wire Line
-	5950 4750 6600 4750
+	5900 3950 6550 3950
 Wire Wire Line
-	5950 4800 5950 4750
+	5900 4000 5900 3950
 $Comp
 L Device:R R11
 U 1 1 60FA2E30
-P 6600 4900
-F 0 "R11" H 6670 4946 50  0000 L CNN
-F 1 "47k" V 6600 4850 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6530 4900 50  0001 C CNN
-F 3 "~" H 6600 4900 50  0001 C CNN
-	1    6600 4900
+P 6550 4100
+F 0 "R11" H 6620 4146 50  0000 L CNN
+F 1 "47k" V 6550 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 6480 4100 50  0001 C CNN
+F 3 "~" H 6550 4100 50  0001 C CNN
+	1    6550 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDPWR #PWR0135
 U 1 1 60FA2167
-P 4050 4400
-F 0 "#PWR0135" H 4050 4200 50  0001 C CNN
-F 1 "GNDPWR" H 4054 4246 50  0000 C CNN
-F 2 "" H 4050 4350 50  0001 C CNN
-F 3 "" H 4050 4350 50  0001 C CNN
-	1    4050 4400
+P 4000 3600
+F 0 "#PWR0135" H 4000 3400 50  0001 C CNN
+F 1 "GNDPWR" H 4004 3446 50  0000 C CNN
+F 2 "" H 4000 3550 50  0001 C CNN
+F 3 "" H 4000 3550 50  0001 C CNN
+	1    4000 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 4400 4350 4800
+	4300 3600 4300 4000
 $Comp
 L Device:R R10
 U 1 1 60F8C6EF
-P 4200 4400
-F 0 "R10" V 4100 4400 50  0000 C CNN
-F 1 "2.2k" V 4200 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4130 4400 50  0001 C CNN
-F 3 "~" H 4200 4400 50  0001 C CNN
-	1    4200 4400
+P 4150 3600
+F 0 "R10" V 4050 3600 50  0000 C CNN
+F 1 "2.2k" V 4150 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4080 3600 50  0001 C CNN
+F 3 "~" H 4150 3600 50  0001 C CNN
+	1    4150 3600
 	0    1    1    0   
 $EndComp
-Text Label 5950 4900 0    50   ~ 0
+Text Label 5900 4100 0    50   ~ 0
 PWR_ENABLE
 Wire Wire Line
-	4350 4900 4350 5000
+	4300 4100 4300 4200
 $Comp
-L SI3865DDVT1GE3:SI3865DDV-T1-GE3 MOSFET1
+L power-rescue:SI3865DDV-T1-GE3-SI3865DDVT1GE3 MOSFET1
 U 1 1 60F87FD2
-P 4350 4800
-F 0 "MOSFET1" H 5150 5187 60  0000 C CNN
-F 1 "SI3865DDV-T1-GE3" H 5150 5081 60  0000 C CNN
-F 2 "SI3865DDVT1GE3:SI3865DDV-T1-GE3" H 5150 5040 60  0001 C CNN
-F 3 "" H 4350 4800 60  0000 C CNN
-	1    4350 4800
+P 4300 4000
+F 0 "MOSFET1" H 5100 4387 60  0000 C CNN
+F 1 "SI3865DDV-T1-GE3" H 5100 4281 60  0000 C CNN
+F 2 "SI3865DDVT1GE3:SI3865DDV-T1-GE3" H 5100 4240 60  0001 C CNN
+F 3 "" H 4300 4000 60  0000 C CNN
+	1    4300 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1116,4 +1104,260 @@ F 3 "" H 1650 4500 60  0001 C CNN
 	1    1650 4500
 	1    0    0    -1  
 $EndComp
+Connection ~ 6850 4250
+$Comp
+L Device:C C6
+U 1 1 60F9FDCE
+P 6850 4400
+F 0 "C6" H 6965 4446 50  0000 L CNN
+F 1 "0.01uF" H 6965 4355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6888 4250 50  0001 C CNN
+F 3 "~" H 6850 4400 50  0001 C CNN
+	1    6850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6197F3A0
+P 5800 6100
+F 0 "#PWR?" H 5800 5850 50  0001 C CNN
+F 1 "GND" H 5805 5927 50  0000 C CNN
+F 2 "" H 5800 6100 50  0001 C CNN
+F 3 "" H 5800 6100 50  0001 C CNN
+	1    5800 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 619A102A
+P 2350 5500
+F 0 "L?" H 2350 5715 50  0000 C CNN
+F 1 "47uH" H 2350 5624 50  0000 C CNN
+F 2 "" H 2350 5500 50  0001 C CNN
+F 3 "~" H 2350 5500 50  0001 C CNN
+	1    2350 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5500 2100 5500
+$Comp
+L Device:C C?
+U 1 1 619B3177
+P 3100 7150
+F 0 "C?" V 2848 7150 50  0000 C CNN
+F 1 "22pF" V 2939 7150 50  0000 C CNN
+F 2 "" H 3138 7000 50  0001 C CNN
+F 3 "~" H 3100 7150 50  0001 C CNN
+	1    3100 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619B898B
+P 2000 7100
+F 0 "#PWR?" H 2000 6850 50  0001 C CNN
+F 1 "GND" H 2005 6927 50  0000 C CNN
+F 2 "" H 2000 7100 50  0001 C CNN
+F 3 "" H 2000 7100 50  0001 C CNN
+	1    2000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61977302
+P 5800 5950
+F 0 "C?" H 5915 5996 50  0000 L CNN
+F 1 "1uF" H 5915 5905 50  0000 L CNN
+F 2 "" H 5838 5800 50  0001 C CNN
+F 3 "~" H 5800 5950 50  0001 C CNN
+	1    5800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61967F1B
+P 5800 5800
+F 0 "#PWR?" H 5800 5650 50  0001 C CNN
+F 1 "+5V" H 5815 5973 50  0000 C CNN
+F 2 "" H 5800 5800 50  0001 C CNN
+F 3 "" H 5800 5800 50  0001 C CNN
+	1    5800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LT3461AES6-TRPBF?:LT3461AES6-TRPBF U?
+U 1 1 61956E7D
+P 1150 6050
+F 0 "U?" H 2350 6437 60  0000 C CNN
+F 1 "LT3461AES6-TRPBF" H 2350 6331 60  0000 C CNN
+F 2 "TSOT-23_S6_LIT" H 2350 6290 60  0001 C CNN
+F 3 "" H 1150 6050 60  0000 C CNN
+	1    1150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6050 1150 5500
+Wire Wire Line
+	3550 6050 3550 5800
+Wire Wire Line
+	3550 5800 3850 5800
+Wire Wire Line
+	3850 6250 3850 5800
+Connection ~ 3850 5800
+Wire Wire Line
+	1150 6150 650  6150
+Text Label 5150 6150 0    50   ~ 0
+SIPM_Power
+Wire Wire Line
+	4900 6200 4900 6150
+Wire Wire Line
+	4100 6150 4350 6150
+Connection ~ 4100 6150
+Wire Wire Line
+	4100 6200 4100 6150
+Wire Wire Line
+	3550 6150 3700 6150
+$Comp
+L power:GND #PWR?
+U 1 1 619F9C8E
+P 4900 6500
+F 0 "#PWR?" H 4900 6250 50  0001 C CNN
+F 1 "GND" H 4905 6327 50  0000 C CNN
+F 2 "" H 4900 6500 50  0001 C CNN
+F 3 "" H 4900 6500 50  0001 C CNN
+	1    4900 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619F9105
+P 4100 6500
+F 0 "#PWR?" H 4100 6250 50  0001 C CNN
+F 1 "GND" H 4105 6327 50  0000 C CNN
+F 2 "" H 4100 6500 50  0001 C CNN
+F 3 "" H 4100 6500 50  0001 C CNN
+	1    4100 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 619F85F2
+P 4900 6350
+F 0 "C?" H 5015 6396 50  0000 L CNN
+F 1 "1uF" H 5015 6305 50  0000 L CNN
+F 2 "" H 4938 6200 50  0001 C CNN
+F 3 "~" H 4900 6350 50  0001 C CNN
+	1    4900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 619F78C0
+P 4100 6350
+F 0 "C?" H 4215 6396 50  0000 L CNN
+F 1 "0.47uF" H 4215 6305 50  0000 L CNN
+F 2 "" H 4138 6200 50  0001 C CNN
+F 3 "~" H 4100 6350 50  0001 C CNN
+	1    4100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 619F69FF
+P 4500 6150
+F 0 "FB?" V 4226 6150 50  0000 C CNN
+F 1 "2.5k Ferrite Bead" V 4317 6150 50  0000 C CNN
+F 2 "" V 4430 6150 50  0001 C CNN
+F 3 "~" H 4500 6150 50  0001 C CNN
+	1    4500 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3550 6250 3850 6250
+Connection ~ 2400 6800
+Wire Wire Line
+	2400 6800 2400 7150
+Connection ~ 2000 6800
+Wire Wire Line
+	2000 6800 2400 6800
+Wire Wire Line
+	1150 6800 2000 6800
+Wire Wire Line
+	1150 6250 1150 6800
+$Comp
+L Device:R R?
+U 1 1 619B2297
+P 3100 6800
+F 0 "R?" V 3000 6800 50  0000 C CNN
+F 1 "243k" V 3100 6800 50  0000 C CNN
+F 2 "" V 3030 6800 50  0001 C CNN
+F 3 "~" H 3100 6800 50  0001 C CNN
+	1    3100 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 619B15B1
+P 2000 6950
+F 0 "R?" H 2050 6950 50  0000 L CNN
+F 1 "10k" V 2000 6900 50  0000 L CNN
+F 2 "" V 1930 6950 50  0001 C CNN
+F 3 "~" H 2000 6950 50  0001 C CNN
+	1    2000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  6150 650  6200
+$Comp
+L power:GND #PWR?
+U 1 1 619ACE10
+P 650 6200
+F 0 "#PWR?" H 650 5950 50  0001 C CNN
+F 1 "GND" H 655 6027 50  0000 C CNN
+F 2 "" H 650 6200 50  0001 C CNN
+F 3 "" H 650 6200 50  0001 C CNN
+	1    650  6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 6150
+Wire Wire Line
+	3700 6150 4100 6150
+Wire Wire Line
+	3700 6150 3700 6800
+Wire Wire Line
+	2400 7150 2950 7150
+Wire Wire Line
+	3250 7150 3700 7150
+Wire Wire Line
+	2400 6800 2950 6800
+Wire Wire Line
+	3250 6800 3700 6800
+Connection ~ 3700 6800
+Wire Wire Line
+	3700 6800 3700 7150
+Wire Wire Line
+	4650 6150 4900 6150
+Connection ~ 4900 6150
+Wire Wire Line
+	4900 6150 5150 6150
+Wire Wire Line
+	3850 5800 5000 5800
+Connection ~ 5800 5800
+Wire Wire Line
+	2600 5500 5000 5500
+Wire Wire Line
+	5000 5500 5000 5800
+Connection ~ 5000 5800
+Wire Wire Line
+	5000 5800 5800 5800
+Wire Notes Line
+	500  5200 6100 5200
+Wire Notes Line
+	6100 5200 6100 7400
+Wire Notes Line
+	6100 7400 500  7400
+Wire Notes Line
+	500  7400 500  5200
+Text Notes 5450 7400 0    50   ~ 0
+DC-DC Booster
 $EndSCHEMATC
