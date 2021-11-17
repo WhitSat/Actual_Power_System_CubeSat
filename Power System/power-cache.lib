@@ -77,6 +77,27 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Ferrite_Bead
+#
+DEF Device_Ferrite_Bead FB 0 0 N Y 1 F N
+F0 "FB" -150 25 50 V V C CNN
+F1 "Device_Ferrite_Bead" 150 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Inductor_*
+ L_*
+ *Ferrite*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -50 0 -48 N
+P 2 0 1 0 0 50 0 51 N
+P 5 0 1 0 -109 16 -67 89 109 -12 66 -85 -109 16 N
+X ~ 1 0 150 100 D 50 50 1 1 P
+X ~ 2 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -94,29 +115,29 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SI3865DDVT1GE3_SI3865DDV-T1-GE3
+# LT3461AES6-TRPBF?_LT3461AES6-TRPBF
 #
-DEF SI3865DDVT1GE3_SI3865DDV-T1-GE3 MOSFET 0 10 Y Y 1 L N
-F0 "MOSFET" 800 400 60 H V C CNN
-F1 "SI3865DDVT1GE3_SI3865DDV-T1-GE3" 800 300 60 H V C CNN
-F2 "TSOP6_MO-193C_VIS" 800 240 60 H I C CNN
+DEF LT3461AES6-TRPBF?_LT3461AES6-TRPBF U 0 10 Y Y 1 L N
+F0 "U" 1200 400 60 H V C CNN
+F1 "LT3461AES6-TRPBF?_LT3461AES6-TRPBF" 1200 300 60 H V C CNN
+F2 "TSOT-23_S6_LIT" 1200 240 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
- TSOP6_MO-193C_VIS
- TSOP6_MO-193C_VIS-M
- TSOP6_MO-193C_VIS-L
+ TSOT-23_S6_LIT
+ TSOT-23_S6_LIT-M
+ TSOT-23_S6_LIT-L
 $ENDFPLIST
 DRAW
-P 2 1 1 5 300 -400 1300 -400 N
+P 2 1 1 5 300 -400 2100 -400 N
 P 2 1 1 5 300 200 300 -400 N
-P 2 1 1 5 1300 -400 1300 200 N
-P 2 1 1 5 1300 200 300 200 N
-X R2 1 0 0 300 R 59 59 1 1 U
-X D2 2 0 -100 300 R 59 59 1 1 U
-X D2 3 0 -200 300 R 59 59 1 1 U
-X S2 4 1600 -200 300 L 59 59 1 1 U
-X ON/OFF 5 1600 -100 300 L 59 59 1 1 U
-X R1,C1 6 1600 0 300 L 59 59 1 1 U
+P 2 1 1 5 2100 -400 2100 200 N
+P 2 1 1 5 2100 200 300 200 N
+X SW 1 0 0 300 R 59 59 1 1 U
+X GND 2 0 -100 300 R 59 59 1 1 W
+X FB 3 0 -200 300 R 59 59 1 1 U
+X *SHDN 4 2400 -200 300 L 59 59 1 1 U
+X VOUT 5 2400 -100 300 L 59 59 1 1 O
+X VIN 6 2400 0 300 L 59 59 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -150,32 +171,11 @@ X +VOUT 3 550 0 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# WhitworthStandard_R-785.0-1.0
+# power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
 #
-DEF WhitworthStandard_R-785.0-1.0 PS 0 40 Y Y 1 L N
-F0 "PS" -400 250 50 H V L BNN
-F1 "WhitworthStandard_R-785.0-1.0" -400 -300 50 H V L BNN
-F2 "CONV_R-785.0-1.0" 0 0 50 H I L BNN
-F3 "10.20mm" 0 0 50 H I L BNN
-F4 "RECOM" 0 0 50 H I L BNN
-F5 "4" 0 0 50 H I L BNN
-F6 "Manufacturer Recommendations" 0 0 50 H I L BNN
-DRAW
-P 2 0 0 10 -400 -200 400 -200 N
-P 2 0 0 10 -400 200 -400 -200 N
-P 2 0 0 10 400 -200 400 200 N
-P 2 0 0 10 400 200 -400 200 N
-X +VIN 1 -600 100 200 R 40 40 0 0 I
-X GND 2 600 -100 200 L 40 40 0 0 W
-X +VOUT 3 600 100 200 L 40 40 0 0 O
-ENDDRAW
-ENDDEF
-#
-# power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
-#
-DEF power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue F 0 20 N N 1 L N
+DEF power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue F 0 20 N N 1 L N
 F0 "F" 200 125 60 H V C CNN
-F1 "power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 200 -250 60 H V C CNN
+F1 "power-rescue_0157004.DRT-LittleFuse_0157004.DRT-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 200 -250 60 H V C CNN
 F2 "0157Series" 200 -310 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -189,11 +189,11 @@ X ~ 2 400 0 100 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
-# power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
+# power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
 #
-DEF power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J 0 40 Y N 1 F N
+DEF power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J 0 40 Y N 1 F N
 F0 "J" 50 1000 50 H V C CNN
-F1 "power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 50 -1100 50 H V C CNN
+F1 "power-rescue_PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 50 -1100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -284,11 +284,58 @@ X Pin_9 9 -200 100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
+# power-rescue_R-785.0-1.0-WhitworthStandard
 #
-DEF power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue U 0 10 Y Y 1 L N
+DEF power-rescue_R-785.0-1.0-WhitworthStandard PS 0 40 Y Y 1 L N
+F0 "PS" -400 250 50 H V L BNN
+F1 "power-rescue_R-785.0-1.0-WhitworthStandard" -400 -300 50 H V L BNN
+F2 "CONV_R-785.0-1.0" 0 0 50 H I L BNN
+F3 "10.20mm" 0 0 50 H I L BNN
+F4 "RECOM" 0 0 50 H I L BNN
+F5 "4" 0 0 50 H I L BNN
+F6 "Manufacturer Recommendations" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -400 -200 400 -200 N
+P 2 0 0 10 -400 200 -400 -200 N
+P 2 0 0 10 400 -200 400 200 N
+P 2 0 0 10 400 200 -400 200 N
+X +VIN 1 -600 100 200 R 40 40 0 0 I
+X GND 2 600 -100 200 L 40 40 0 0 W
+X +VOUT 3 600 100 200 L 40 40 0 0 O
+ENDDRAW
+ENDDEF
+#
+# power-rescue_SI3865DDV-T1-GE3-SI3865DDVT1GE3
+#
+DEF power-rescue_SI3865DDV-T1-GE3-SI3865DDVT1GE3 MOSFET 0 10 Y Y 1 L N
+F0 "MOSFET" 800 400 60 H V C CNN
+F1 "power-rescue_SI3865DDV-T1-GE3-SI3865DDVT1GE3" 800 300 60 H V C CNN
+F2 "TSOP6_MO-193C_VIS" 800 240 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ TSOP6_MO-193C_VIS
+ TSOP6_MO-193C_VIS-M
+ TSOP6_MO-193C_VIS-L
+$ENDFPLIST
+DRAW
+P 2 1 1 5 300 -400 1300 -400 N
+P 2 1 1 5 300 200 300 -400 N
+P 2 1 1 5 1300 -400 1300 200 N
+P 2 1 1 5 1300 200 300 200 N
+X R2 1 0 0 300 R 59 59 1 1 U
+X D2 2 0 -100 300 R 59 59 1 1 U
+X D2 3 0 -200 300 R 59 59 1 1 U
+X S2 4 1600 -200 300 L 59 59 1 1 U
+X ON/OFF 5 1600 -100 300 L 59 59 1 1 U
+X R1,C1 6 1600 0 300 L 59 59 1 1 U
+ENDDRAW
+ENDDEF
+#
+# power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue
+#
+DEF power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue U 0 10 Y Y 1 L N
 F0 "U" 1100 400 60 H V C CNN
-F1 "power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 1100 300 60 H V C CNN
+F1 "power-rescue_ds2781e+-ds2781e&plus_-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue" 1100 300 60 H V C CNN
 F2 "21-0175A" 1100 240 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -423,6 +470,23 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
 X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# pspice_INDUCTOR
+#
+DEF pspice_INDUCTOR L 0 0 N Y 1 F N
+F0 "L" 0 100 50 H V C CNN
+F1 "pspice_INDUCTOR" 0 -50 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A -150 0 50 1 1799 0 1 0 N -100 0 -200 0
+A -50 0 50 1 1799 0 1 0 N 0 0 -100 0
+A 50 0 50 1 1799 0 1 0 N 100 0 0 0
+A 150 0 50 1 1799 0 1 0 N 200 0 100 0
+X 1 1 -250 0 50 R 30 30 1 1 I
+X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #

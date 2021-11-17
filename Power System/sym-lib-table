@@ -8,4 +8,5 @@
   (lib (name power-rescue)(type Legacy)(uri ${KIPRJMOD}/power-rescue.lib)(options "")(descr ""))
   (lib (name WhitworthStandard)(type Legacy)(uri ${COMMOD_CMN}/kicad_parts/WhitworthStandard/WhitworthStandard.lib)(options "")(descr ""))
   (lib (name SI3865DDVT1GE3)(type Legacy)(uri ${COMMOD_CMN}/kicad_parts/ul_SI3865DDVT1GE3/KiCAD/2021-07-20_18-06-28/2021-07-20_18-06-28.lib)(options "")(descr ""))
+  (lib (name LT3461AES6-TRPBF?)(type Legacy)(uri "/Users/margaretfairborn/Desktop/KiCad Projects/Actual_Power_System_CubeSat/kicad_parts/MAX732MJA883B/ul_LT3461AES6-TRPBF/KiCAD/2021-11-17_06-51-03/2021-11-17_06-51-03.lib")(options "")(descr ""))
 )
