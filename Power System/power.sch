@@ -133,113 +133,6 @@ Wire Wire Line
 	5000 7650 5000 7750
 Wire Wire Line
 	3000 7650 3000 7750
-Text Label 9650 2200 0    50   ~ 0
-IRIDIUM_TX
-Text Label 9650 2100 0    50   ~ 0
-IRIDIUM_RX
-Text Label 9650 2400 0    50   ~ 0
-1_WIRE
-Text Label 9650 2000 0    50   ~ 0
-IRIDIUM_PWR_CTRL
-Text Label 9650 2300 0    50   ~ 0
-IRIDIUM_NET_AVAIL
-Text Label 9150 2400 2    50   ~ 0
-SPI_MOSI
-Text Label 9150 2300 2    50   ~ 0
-SPI_MISO
-Text Label 9150 2200 2    50   ~ 0
-SPI_CLK
-Text Label 9150 1900 2    50   ~ 0
-I2C_SDA
-Text Label 9150 1800 2    50   ~ 0
-I2C_SCL
-Text Label 9650 1200 0    50   ~ 0
-LED_A
-Text Label 9650 1300 0    50   ~ 0
-LED_B
-Text Label 9650 1400 0    50   ~ 0
-LED_C
-Text Label 9150 1400 2    50   ~ 0
-A0
-Text Label 9150 1300 2    50   ~ 0
-A1
-Text Label 9150 1200 2    50   ~ 0
-A2
-Text Label 9650 1500 0    50   ~ 0
-PWM
-Text Label 9150 2100 2    50   ~ 0
-DIO1
-Text Label 9650 2500 0    50   ~ 0
-RADIO_WAKE
-Text Label 9650 1100 0    50   ~ 0
-USB_D+
-Text Label 9650 1000 0    50   ~ 0
-USB_B-
-Text Label 9150 1500 2    50   ~ 0
-POD_WAKE
-Text Label 9150 1700 2    50   ~ 0
-POD_RX
-Text Label 9150 1600 2    50   ~ 0
-POD_TX
-$Comp
-L power:+5V #PWR0106
-U 1 1 5DBA9AD1
-P 9650 900
-F 0 "#PWR0106" H 9650 750 50  0001 C CNN
-F 1 "+5V" V 9650 1050 50  0000 L CNN
-F 2 "" H 9650 900 50  0001 C CNN
-F 3 "" H 9650 900 50  0001 C CNN
-	1    9650 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5DBAA285
-P 8650 900
-F 0 "#PWR0107" H 8650 650 50  0001 C CNN
-F 1 "GND" H 8655 727 50  0000 C CNN
-F 2 "" H 8650 900 50  0001 C CNN
-F 3 "" H 8650 900 50  0001 C CNN
-	1    8650 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDS #PWR0108
-U 1 1 5DBABCBA
-P 8550 2000
-F 0 "#PWR0108" H 8550 1750 50  0001 C CNN
-F 1 "GNDS" H 8555 1827 50  0000 C CNN
-F 2 "" H 8550 2000 50  0001 C CNN
-F 3 "" H 8550 2000 50  0001 C CNN
-	1    8550 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5DBB128C
-P 9150 2800
-F 0 "#PWR0110" H 9150 2550 50  0001 C CNN
-F 1 "GND" H 9155 2627 50  0000 C CNN
-F 2 "" H 9150 2800 50  0001 C CNN
-F 3 "" H 9150 2800 50  0001 C CNN
-	1    9150 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J1
-U 1 1 5DB909C2
-P 9350 1800
-F 0 "J1" H 9400 2917 50  0000 C CNN
-F 1 "PC104_40Pin_2.54mm" H 9400 2826 50  0000 C CNN
-F 2 "WhitworthStandard:PC104_40PinSocket_2.54mm" H 9350 1800 50  0001 C CNN
-F 3 "~" H 9350 1800 50  0001 C CNN
-	1    9350 1800
-	1    0    0    -1  
-$EndComp
-Text Label 9150 1000 2    50   ~ 0
-EXT_TEMP
-Text Label 9150 1100 2    50   ~ 0
-A3
 $Comp
 L power:GNDPWR #PWR0116
 U 1 1 5E1F1571
@@ -288,26 +181,6 @@ Wire Wire Line
 	3500 7650 3500 7800
 Wire Wire Line
 	4000 7650 4000 7800
-Wire Notes Line
-	8200 550  10450 550 
-Wire Notes Line
-	10450 550  10450 3150
-Text Notes 9600 3150 0    50   ~ 0
-Interboard Connector
-Wire Wire Line
-	9150 2000 8550 2000
-Text Label 9650 1800 0    50   ~ 0
-INTERBOARD_1
-Text Label 9650 1700 0    50   ~ 0
-INTERBOARD_2
-Text Label 9650 1900 0    50   ~ 0
-AUDIO_ALERT
-Text Label 9650 1600 0    50   ~ 0
-INTERBOARD_3
-Wire Notes Line
-	8200 3150 8200 550 
-Wire Notes Line
-	10450 3150 8200 3150
 $Comp
 L Connector_Generic:Conn_02x05_Counter_Clockwise J4
 U 1 1 5E7B81D8
@@ -390,8 +263,6 @@ F 3 "" H 9550 3550 50  0001 C CNN
 	1    9550 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8650 900  9150 900 
 Text Label 9550 3650 0    50   ~ 0
 EXT_TEMP
 $Comp
@@ -755,74 +626,6 @@ Wire Wire Line
 Connection ~ 1800 1600
 Wire Wire Line
 	1800 1600 2050 1600
-$Comp
-L power:+3.3V #PWR0109
-U 1 1 5E718EAD
-P 9650 2800
-F 0 "#PWR0109" H 9650 2650 50  0001 C CNN
-F 1 "+3.3V" V 9650 2950 50  0000 L CNN
-F 2 "" H 9650 2800 50  0001 C CNN
-F 3 "" H 9650 2800 50  0001 C CNN
-	1    9650 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8550 2500 9150 2500
-$Comp
-L WhitworthStandard:+7.4V #PWR0114
-U 1 1 5E1EC1FF
-P 9650 2600
-F 0 "#PWR0114" H 9650 2450 50  0001 C CNN
-F 1 "+7.4V" V 9650 2750 50  0000 L CNN
-F 2 "" H 9650 2600 50  0001 C CNN
-F 3 "" H 9650 2600 50  0001 C CNN
-	1    9650 2600
-	0    1    1    0   
-$EndComp
-$Comp
-L WhitworthStandard:+7.4V #PWR0112
-U 1 1 5E1E31F7
-P 9150 2600
-F 0 "#PWR0112" H 9150 2450 50  0001 C CNN
-F 1 "+7.4V" V 9150 2750 50  0000 L CNN
-F 2 "" H 9150 2600 50  0001 C CNN
-F 3 "" H 9150 2600 50  0001 C CNN
-	1    9150 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0123
-U 1 1 5E90BE99
-P 9650 2700
-F 0 "#PWR0123" H 9650 2550 50  0001 C CNN
-F 1 "+3.3V" V 9650 2850 50  0000 L CNN
-F 2 "" H 9650 2700 50  0001 C CNN
-F 3 "" H 9650 2700 50  0001 C CNN
-	1    9650 2700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0137
-U 1 1 5E90C21A
-P 9150 2700
-F 0 "#PWR0137" H 9150 2550 50  0001 C CNN
-F 1 "+3.3V" V 9150 2850 50  0000 L CNN
-F 2 "" H 9150 2700 50  0001 C CNN
-F 3 "" H 9150 2700 50  0001 C CNN
-	1    9150 2700
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:GND #PWR0139
-U 1 1 5E90F9C2
-P 8550 2500
-F 0 "#PWR0139" H 8550 2250 50  0001 C CNN
-F 1 "GND" H 8555 2327 50  0000 C CNN
-F 2 "" H 8550 2500 50  0001 C CNN
-F 3 "" H 8550 2500 50  0001 C CNN
-	1    8550 2500
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	550  550  6000 550 
 Wire Notes Line
@@ -1360,4 +1163,192 @@ Wire Notes Line
 	500  7400 500  5200
 Text Notes 5450 7400 0    50   ~ 0
 DC-DC Booster
+Text Label 9500 2800 0    50   ~ 0
+SIPM_Power
+$Comp
+L power:GND #PWR0139
+U 1 1 5E90F9C2
+P 8400 2500
+F 0 "#PWR0139" H 8400 2250 50  0001 C CNN
+F 1 "GND" H 8405 2327 50  0000 C CNN
+F 2 "" H 8400 2500 50  0001 C CNN
+F 3 "" H 8400 2500 50  0001 C CNN
+	1    8400 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0137
+U 1 1 5E90C21A
+P 9000 2700
+F 0 "#PWR0137" H 9000 2550 50  0001 C CNN
+F 1 "+3.3V" V 9000 2850 50  0000 L CNN
+F 2 "" H 9000 2700 50  0001 C CNN
+F 3 "" H 9000 2700 50  0001 C CNN
+	1    9000 2700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0123
+U 1 1 5E90BE99
+P 9500 2700
+F 0 "#PWR0123" H 9500 2550 50  0001 C CNN
+F 1 "+3.3V" V 9500 2850 50  0000 L CNN
+F 2 "" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2700 50  0001 C CNN
+	1    9500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L WhitworthStandard:+7.4V #PWR0112
+U 1 1 5E1E31F7
+P 9000 2600
+F 0 "#PWR0112" H 9000 2450 50  0001 C CNN
+F 1 "+7.4V" V 9000 2750 50  0000 L CNN
+F 2 "" H 9000 2600 50  0001 C CNN
+F 3 "" H 9000 2600 50  0001 C CNN
+	1    9000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L WhitworthStandard:+7.4V #PWR0114
+U 1 1 5E1EC1FF
+P 9500 2600
+F 0 "#PWR0114" H 9500 2450 50  0001 C CNN
+F 1 "+7.4V" V 9500 2750 50  0000 L CNN
+F 2 "" H 9500 2600 50  0001 C CNN
+F 3 "" H 9500 2600 50  0001 C CNN
+	1    9500 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 2500 9000 2500
+Wire Wire Line
+	8500 900  9000 900 
+Wire Notes Line
+	8050 3150 8050 550 
+Text Label 9500 1600 0    50   ~ 0
+INTERBOARD_3
+Text Label 9500 1900 0    50   ~ 0
+SIPM_1_Analog_Voltage
+Text Label 9500 1700 0    50   ~ 0
+INTERBOARD_2
+Text Label 9500 1800 0    50   ~ 0
+INTERBOARD_1
+Wire Wire Line
+	9000 2000 8400 2000
+Text Notes 9450 3150 0    50   ~ 0
+Interboard Connector
+Wire Notes Line
+	10400 550  10400 3150
+Text Label 9000 1100 2    50   ~ 0
+A3
+Text Label 9000 1000 2    50   ~ 0
+EXT_TEMP
+$Comp
+L power-rescue:PC104_40Pin_2.54mm-WhitworthStandard-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue-power-rescue J1
+U 1 1 5DB909C2
+P 9200 1800
+F 0 "J1" H 9250 2917 50  0000 C CNN
+F 1 "PC104_40Pin_2.54mm" H 9250 2826 50  0000 C CNN
+F 2 "WhitworthStandard:PC104_40PinSocket_2.54mm" H 9200 1800 50  0001 C CNN
+F 3 "~" H 9200 1800 50  0001 C CNN
+	1    9200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5DBB128C
+P 9000 2800
+F 0 "#PWR0110" H 9000 2550 50  0001 C CNN
+F 1 "GND" H 9005 2627 50  0000 C CNN
+F 2 "" H 9000 2800 50  0001 C CNN
+F 3 "" H 9000 2800 50  0001 C CNN
+	1    9000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0108
+U 1 1 5DBABCBA
+P 8400 2000
+F 0 "#PWR0108" H 8400 1750 50  0001 C CNN
+F 1 "GNDS" H 8405 1827 50  0000 C CNN
+F 2 "" H 8400 2000 50  0001 C CNN
+F 3 "" H 8400 2000 50  0001 C CNN
+	1    8400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5DBAA285
+P 8500 900
+F 0 "#PWR0107" H 8500 650 50  0001 C CNN
+F 1 "GND" H 8505 727 50  0000 C CNN
+F 2 "" H 8500 900 50  0001 C CNN
+F 3 "" H 8500 900 50  0001 C CNN
+	1    8500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5DBA9AD1
+P 9500 900
+F 0 "#PWR0106" H 9500 750 50  0001 C CNN
+F 1 "+5V" V 9500 1050 50  0000 L CNN
+F 2 "" H 9500 900 50  0001 C CNN
+F 3 "" H 9500 900 50  0001 C CNN
+	1    9500 900 
+	0    1    1    0   
+$EndComp
+Text Label 9000 1600 2    50   ~ 0
+POD_TX
+Text Label 9000 1700 2    50   ~ 0
+POD_RX
+Text Label 9000 1500 2    50   ~ 0
+Battery_Voltage
+Text Label 9500 1000 0    50   ~ 0
+USB_B-
+Text Label 9500 1100 0    50   ~ 0
+USB_D+
+Text Label 9500 2500 0    50   ~ 0
+SIPM_2_RESET
+Text Label 9000 2100 2    50   ~ 0
+DIO1
+Text Label 9500 1500 0    50   ~ 0
+PWM
+Text Label 9000 1200 2    50   ~ 0
+A2
+Text Label 9000 1300 2    50   ~ 0
+A1
+Text Label 9000 1400 2    50   ~ 0
+A0
+Text Label 9500 1400 0    50   ~ 0
+LED_C
+Text Label 9500 1300 0    50   ~ 0
+LED_B
+Text Label 9500 1200 0    50   ~ 0
+LED_A
+Text Label 9000 1800 2    50   ~ 0
+I2C_SCL
+Text Label 9000 1900 2    50   ~ 0
+I2C_SDA
+Text Label 9000 2200 2    50   ~ 0
+SPI_CLK
+Text Label 9000 2300 2    50   ~ 0
+SPI_MISO
+Text Label 9000 2400 2    50   ~ 0
+SPI_MOSI
+Text Label 9500 2300 0    50   ~ 0
+SIPM_1_RESET
+Text Label 9500 2000 0    50   ~ 0
+SIPM_2_Analog_Voltage
+Text Label 9500 2400 0    50   ~ 0
+1_WIRE
+Text Label 9500 2100 0    50   ~ 0
+OTHER_RX
+Text Label 9500 2200 0    50   ~ 0
+OTHER_TX
+Wire Notes Line
+	8050 550  10400 550 
+Wire Notes Line
+	8050 3150 10400 3150
 $EndSCHEMATC
