@@ -9,4 +9,5 @@
   (lib (name SI3865DDVT1GE3)(type KiCad)(uri ${COMMOD_CMN}/kicad_parts/ul_SI3865DDVT1GE3/KiCAD/2021-07-20_18-06-28/footprints.pretty)(options "")(descr ""))
   (lib (name digikey-footprints)(type KiCad)(uri "/Users/margaretfairborn/Desktop/KiCad Projects/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
   (lib (name LT3461AES6-TRPBF)(type KiCad)(uri ${EXTRA_PARTS_CUBESAT}/kicad_parts/MAX732MJA883B/ul_LT3461AES6-TRPBF/KiCAD/2021-11-17_06-51-03/footprints.pretty)(options "")(descr ""))
+  (lib (name LT3461ES6_TRMPBF)(type KiCad)(uri ${EXTRA_PARTS_CUBESAT}/kicad_parts/ul_LT3461ES6-TRMPBF/KiCAD/2021-12-10_20-09-26/footprints.pretty)(options "")(descr ""))
 )
