@@ -1289,9 +1289,9 @@ F 3 "" H 9500 900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 9000 1600 2    50   ~ 0
-POD_TX
+SERIAL_TX
 Text Label 9000 1700 2    50   ~ 0
-POD_RX
+SERIAL_RX
 Text Label 9000 1500 2    50   ~ 0
 Battery_Voltage
 Text Label 9500 1000 0    50   ~ 0

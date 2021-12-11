@@ -1293,7 +1293,7 @@ SERIAL_TX
 Text Label 9000 1700 2    50   ~ 0
 SERIAL_RX
 Text Label 9000 1500 2    50   ~ 0
-Battery_Voltage
+Unclaimed
 Text Label 9500 1000 0    50   ~ 0
 USB_B-
 Text Label 9500 1100 0    50   ~ 0
