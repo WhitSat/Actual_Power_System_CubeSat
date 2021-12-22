@@ -1,4 +1,11 @@
-20008530004664123
+20013449515534382
+302-S101Connector
+302-S101
+
+
+0
+10
+10
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56216,8 +56223,22 @@ Yellow 5381 Series LED
 0
 2
 2
+LQH43NH470J03L-Inductor
+IND_LQH43NH470J03L
+
+
+0
+2
+2
 LT3461AES6-TRPBF
 LT3461AES6-TRPBF
+
+
+0
+6
+6
+LT3461ES6_TRMPBF
+LT3461ES6-TRMPBF
 
 
 0

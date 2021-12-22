@@ -10,4 +10,6 @@
   (lib (name SI3865DDVT1GE3)(type Legacy)(uri ${COMMOD_CMN}/kicad_parts/ul_SI3865DDVT1GE3/KiCAD/2021-07-20_18-06-28/2021-07-20_18-06-28.lib)(options "")(descr ""))
   (lib (name LT3461AES6-TRPBF?)(type Legacy)(uri "/Users/margaretfairborn/Desktop/KiCad Projects/Actual_Power_System_CubeSat/kicad_parts/MAX732MJA883B/ul_LT3461AES6-TRPBF/KiCAD/2021-11-17_06-51-03/2021-11-17_06-51-03.lib")(options "")(descr ""))
   (lib (name LT3461ES6-TRPBF)(type Legacy)(uri ${EXTRA_PARTS_CUBESAT}/kicad_parts/ul_LT3461ES6-TRMPBF/KiCAD/2021-12-10_20-09-26/2021-12-10_20-09-26.lib)(options "")(descr ""))
+  (lib (name 302-S101Connector)(type Legacy)(uri ${EXTRA_PARTS_CUBESAT}/kicad_parts/ul_302-S101/KiCAD/2021-12-22_01-50-10/2021-12-22_01-50-10.lib)(options "")(descr ""))
+  (lib (name LQH43NH470J03L-Inductor)(type Legacy)(uri ${EXTRA_PARTS_CUBESAT}/kicad_parts/LQH43NH470J03L/LQH43NH470J03L.lib)(options "")(descr ""))
 )
